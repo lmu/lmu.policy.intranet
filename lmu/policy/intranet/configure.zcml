@@ -16,4 +16,13 @@
         description="Extension policy profile for ZUV-Intranet - installes all dependecies and Settings for the Intranet."
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
+
+    <genericsetup:registerProfile
+        name="demo-content"
+        title="LMU Policy for ZUV-Intranet - Demo-Content"
+        description="Extension profile for ZUV-Intranet - creates demo content on the portal"
+        directory="profiles/demo-content"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
 </configure>
