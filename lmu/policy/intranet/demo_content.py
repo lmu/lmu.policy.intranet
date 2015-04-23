@@ -1,41 +1,20 @@
 # -*- coding: utf-8 -*-
 
-content = {
-    'blog-mit': {
-        'title': 'Blog mit',
+content = [
+    ('blog-mit', {
+        'title': 'Blog mit!',
         'description': 'Mitarbeiten, Mitreden, Mitmachen.',
         'type': 'Blog Folder',
         'path': '/'
-    },
-    'umfragen': {
+    }),
+    ('umfragen', {
         'title': 'Umfragen',
         'description': '',
         'type': 'Folder',
         'path': '/'
-    },
-    'organisationsentwicklung-an-der-universitaet-lund': {
-        'title': u'Organisationsentwicklung an der Universität Lund',
-        'description': '',
-        'text': u"""<p>Im Rahmen eines Mitarbeiteraustauschs war ich letzte Woche an der LERU-Uni in Lund / Schweden.
-        Es ist sehr erhellend, wie dort die Verwaltung aufgebaut ist und wie sie derzeit ihre Administration optimieren.
-        Einige Maßnahmen sind ähnlich wie in ZUV 2015…</p>""",
-        'type': 'Blog Entry',
-        'path': '/blog-mit',
-        'image': 'demo-content/lunds-universitets-huvudbyggnad.jpg',
-        'image_caption': u'Universität Lund'
-    },
-    'wer-hat-erfahrungen-mit-online-anwendungen-fuer-die-reisekosten-administration': {
-        'title': u'Wer hat Erfahrungen mit Online-Anwendungen für die Reisekosten-Administration?',
-        'description': '',
-        'text': u"""<p>Ich leite ein Projekt zur Optimierung des Geschäftsprozesses von Reisekosten und arbeite derzeit an einem Konzept zur Digitalisierung von deren Beantragung.
-        Hat jemand Erfahrungen mit Online-Buchungs-Tools und kann diese einbringen?</p>""",
-        'type': 'Blog Entry',
-        'path': '/blog-mit',
-        'image': '',
-        'image_caption': u''
-    },
-    'verloren-und-gewonnen-am-aktionstag-gesundheit': {
-        'title': u'Organisationsentwicklung an der Universität Lund',
+    }),
+    ('verloren-und-gewonnen-am-aktionstag-gesundheit', {
+        'title': u'Verloren und gewonnen am Aktionstag Gesundheit',
         'description': '',
         'text': u"""<p>Leider hat es für mein Team nicht für einen Sieg im Riesenkicker gereicht – dennoch war aus meiner Sicht der Aktionstag Gesundheit ein voller Erfolg:
         Am Ende waren alle Gewinner.</p>
@@ -55,7 +34,26 @@ content = {
         'path': '/blog-mit',
         'image': 'demo-content/Aktionstag Gesundheit 006.jpg',
         'image_caption': u'Aktionstag Gesundheit - Reisen-Kicker'
-    },
-
-
-}
+    }),
+    ('wer-hat-erfahrungen-mit-online-anwendungen-fuer-die-reisekosten-administration', {
+        'title': u'Wer hat Erfahrungen mit Online-Anwendungen für die Reisekosten-Administration?',
+        'description': '',
+        'text': u"""<p>Ich leite ein Projekt zur Optimierung des Geschäftsprozesses von Reisekosten und arbeite derzeit an einem Konzept zur Digitalisierung von deren Beantragung.
+        Hat jemand Erfahrungen mit Online-Buchungs-Tools und kann diese einbringen?</p>""",
+        'type': 'Blog Entry',
+        'path': '/blog-mit',
+        'image': '',
+        'image_caption': u''
+    }),
+    ('organisationsentwicklung-an-der-universitaet-lund', {
+        'title': u'Organisationsentwicklung an der Universität Lund',
+        'description': '',
+        'text': u"""<p>Im Rahmen eines Mitarbeiteraustauschs war ich letzte Woche an der LERU-Uni in Lund / Schweden.
+        Es ist sehr erhellend, wie dort die Verwaltung aufgebaut ist und wie sie derzeit ihre Administration optimieren.
+        Einige Maßnahmen sind ähnlich wie in ZUV 2015…</p>""",
+        'type': 'Blog Entry',
+        'path': '/blog-mit',
+        'image': 'demo-content/lunds-universitets-huvudbyggnad.jpg',
+        'image_caption': u'Universität Lund'
+    }),
+]

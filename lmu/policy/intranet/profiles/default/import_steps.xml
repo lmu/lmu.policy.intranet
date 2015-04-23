@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<import-steps>
+ <import-step id="lmu.policy.intranet--default" version="20150422-01"
+              handler="lmu.policy.intranet.setuphandlers.setupVarious"
+              title="lmu.policy.intranet default">
+    lmu.policy.intranet default installation step.
+ </import-step>
+</import-steps>
