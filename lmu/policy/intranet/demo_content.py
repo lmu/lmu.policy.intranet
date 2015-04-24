@@ -34,20 +34,22 @@ demo_blog_entries = {
         Denn gewonnen oder nicht, ich hatte den Eindruck, dass am Ende jeder jeden ein wenig mehr kannte und schätzte.
         So dass am Ende des Tages alle als Gewinner einer – wie eben anfangs erwähnt – Gemeinschaft waren.</p>
         <p>Ich freue mich auf nächstes Jahr und werde wieder am Start sein.</p>""",
-        'type': 'Blog Entry',
         'path': '/blog-mit',
         'image': 'demo-content/Aktionstag Gesundheit 006.jpg',
-        'image_caption': u'Aktionstag Gesundheit - Reisen-Kicker'
+        'image_caption': u'Aktionstag Gesundheit - Reisen-Kicker',
+        'author': 'Brady',
+        'modification_date': '2014-10-02 18:09'
     },
     'wer-hat-erfahrungen-mit-online-anwendungen-fuer-die-reisekosten-administration': {
         'title': u'Wer hat Erfahrungen mit Online-Anwendungen für die Reisekosten-Administration?',
         'description': '',
         'text': u"""<p>Ich leite ein Projekt zur Optimierung des Geschäftsprozesses von Reisekosten und arbeite derzeit an einem Konzept zur Digitalisierung von deren Beantragung.
         Hat jemand Erfahrungen mit Online-Buchungs-Tools und kann diese einbringen?</p>""",
-        'type': 'Blog Entry',
         'path': '/blog-mit',
         'image': '',
-        'image_caption': u''
+        'image_caption': u'',
+        'author': 'Brady',
+        'modification_date': '2014-10-02 18:09'
     },
     'organisationsentwicklung-an-der-universitaet-lund': {
         'title': u'Organisationsentwicklung an der Universität Lund',
@@ -55,10 +57,11 @@ demo_blog_entries = {
         'text': u"""<p>Im Rahmen eines Mitarbeiteraustauschs war ich letzte Woche an der LERU-Uni in Lund / Schweden.
         Es ist sehr erhellend, wie dort die Verwaltung aufgebaut ist und wie sie derzeit ihre Administration optimieren.
         Einige Maßnahmen sind ähnlich wie in ZUV 2015…</p>""",
-        'type': 'Blog Entry',
         'path': '/blog-mit',
         'image': 'demo-content/lunds-universitets-huvudbyggnad.jpg',
-        'image_caption': u'Universität Lund'
+        'image_caption': u'Universität Lund',
+        'author': 'Brady',
+        'modification_date': '2014-10-02 18:09'
     },
 }
 

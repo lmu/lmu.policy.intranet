@@ -27,7 +27,7 @@ def setupVarious(context):
         return
 
     _setupGroups(context)
-    _setupBaseContent()
+    _setupBaseContent(context)
 
 
 def _setupGroups(context):
