@@ -1,19 +1,23 @@
 # -*- coding: utf-8 -*-
 
-content = [
-    ('blog-mit', {
-        'title': 'Blog mit!',
-        'description': 'Mitarbeiten, Mitreden, Mitmachen.',
-        'type': 'Blog Folder',
-        'path': '/'
-    }),
-    ('umfragen', {
-        'title': 'Umfragen',
-        'description': '',
-        'type': 'Folder',
-        'path': '/'
-    }),
-    ('verloren-und-gewonnen-am-aktionstag-gesundheit', {
+demo_users = {
+    'Brady': {
+        'email': 'demo@lmu.de',
+        'properties': {
+            'fullname': 'Stephanie Brady',
+        }
+    },
+    'Simon.Kirner': {
+        'email': 'demo@lmu.de',
+        'properties': {
+            'fullname': 'Simon Kirner',
+        }
+    }
+}
+
+
+demo_blog_entries = {
+    'verloren-und-gewonnen-am-aktionstag-gesundheit': {
         'title': u'Verloren und gewonnen am Aktionstag Gesundheit',
         'description': '',
         'text': u"""<p>Leider hat es für mein Team nicht für einen Sieg im Riesenkicker gereicht – dennoch war aus meiner Sicht der Aktionstag Gesundheit ein voller Erfolg:
@@ -34,8 +38,8 @@ content = [
         'path': '/blog-mit',
         'image': 'demo-content/Aktionstag Gesundheit 006.jpg',
         'image_caption': u'Aktionstag Gesundheit - Reisen-Kicker'
-    }),
-    ('wer-hat-erfahrungen-mit-online-anwendungen-fuer-die-reisekosten-administration', {
+    },
+    'wer-hat-erfahrungen-mit-online-anwendungen-fuer-die-reisekosten-administration': {
         'title': u'Wer hat Erfahrungen mit Online-Anwendungen für die Reisekosten-Administration?',
         'description': '',
         'text': u"""<p>Ich leite ein Projekt zur Optimierung des Geschäftsprozesses von Reisekosten und arbeite derzeit an einem Konzept zur Digitalisierung von deren Beantragung.
@@ -44,8 +48,8 @@ content = [
         'path': '/blog-mit',
         'image': '',
         'image_caption': u''
-    }),
-    ('organisationsentwicklung-an-der-universitaet-lund', {
+    },
+    'organisationsentwicklung-an-der-universitaet-lund': {
         'title': u'Organisationsentwicklung an der Universität Lund',
         'description': '',
         'text': u"""<p>Im Rahmen eines Mitarbeiteraustauschs war ich letzte Woche an der LERU-Uni in Lund / Schweden.
@@ -55,5 +59,13 @@ content = [
         'path': '/blog-mit',
         'image': 'demo-content/lunds-universitets-huvudbyggnad.jpg',
         'image_caption': u'Universität Lund'
-    }),
-]
+    },
+}
+
+demo_polls = {
+    '': {}
+}
+
+demo_pinnwand_entries = {
+    '': {}
+}

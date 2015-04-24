@@ -17,3 +17,18 @@ required_groups = {
         'description': 'Virtual Group for Users of the ZUV-Intranet derifed from Shibboleth via "cn=ZUV-Mitarbeiter,ou=..."'
     }
 }
+
+base_content = [
+    ('blog-mit', {
+        'title': 'Blog mit!',
+        'description': 'Mitarbeiten, Mitreden, Mitmachen.',
+        'type': 'Blog Folder',
+        'path': '/'
+    }),
+    ('umfragen', {
+        'title': 'Umfragen',
+        'description': '',
+        'type': 'Folder',
+        'path': '/'
+    })
+]
