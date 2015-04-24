@@ -4,6 +4,8 @@ from __future__ import print_function
 import os
 import sys
 
+from DateTime import DateTime
+
 from plone import api
 from plone.app.textfield.value import RichTextValue
 from plone.namedfile import NamedBlobImage
@@ -92,8 +94,7 @@ def importDemoContent(context):
 
 
 def _setupDemoUsers(context):
-    all_users = api.user.get_users()
-    import ipdb; ipdb.set_trace()
+    all_users = [user.id for user in api.user.get_users()]
     for uid, udata in demo_users.iteritems():
         if uid not in all_users:
             try:
@@ -106,7 +107,6 @@ def _setupDemoUsers(context):
                 print(e.message)
             except Exception as e:
                 print(e.message)
-                import ipdb; ipdb.set_trace()
 
 
 def _setupDemoBlogEntries(context):
@@ -122,14 +122,15 @@ def _setupDemoBlogEntries(context):
                 description=oval['description'],
                 text=RichTextValue(oval['text'], 'text/html', 'text/html'),
                 image=NamedBlobImage(data=imageFile.read()) if imageFile else '',
-                image_caption=oval['image_caption']
+                image_caption=oval['image_caption'],
+                creators=(oval['author'],),
             )
             api.content.transition(obj=entry, to_state='internally_published')
+            entry.modification_date = DateTime(oval['modification_date'])
         except BadRequest as e:
             print(e.message)
         except Exception as e:
             print(e.message)
-            import ipdb; ipdb.set_trace()
 
 
 def _setupDemoPolls(context):
@@ -148,7 +149,7 @@ def _setupDemoPolls(context):
             print(e.message)
         except Exception as e:
             print(e.message)
-            import ipdb; ipdb.set_trace()
+            #import ipdb; ipdb.set_trace()
 
 
 def _setupDemoPinnwandEntries(context):

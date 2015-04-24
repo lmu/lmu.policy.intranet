@@ -37,8 +37,8 @@ demo_blog_entries = {
         'path': '/blog-mit',
         'image': 'demo-content/Aktionstag Gesundheit 006.jpg',
         'image_caption': u'Aktionstag Gesundheit - Reisen-Kicker',
-        'author': 'Brady',
-        'modification_date': '2014-10-02 18:09'
+        'author': 'Simon.Kirner',
+        'modification_date': '2014/10/02 18:09:00.000000 UTC'
     },
     'wer-hat-erfahrungen-mit-online-anwendungen-fuer-die-reisekosten-administration': {
         'title': u'Wer hat Erfahrungen mit Online-Anwendungen für die Reisekosten-Administration?',
@@ -49,7 +49,7 @@ demo_blog_entries = {
         'image': '',
         'image_caption': u'',
         'author': 'Brady',
-        'modification_date': '2014-10-02 18:09'
+        'modification_date': '2014/10/02 17:32:00.000000 UTC'
     },
     'organisationsentwicklung-an-der-universitaet-lund': {
         'title': u'Organisationsentwicklung an der Universität Lund',
@@ -61,7 +61,7 @@ demo_blog_entries = {
         'image': 'demo-content/lunds-universitets-huvudbyggnad.jpg',
         'image_caption': u'Universität Lund',
         'author': 'Brady',
-        'modification_date': '2014-10-02 18:09'
+        'modification_date': '2014/10/02 15:09:00.000000 UTC'
     },
 }
 
