@@ -2,6 +2,6 @@
 <metadata>
   <version>1000</version>
   <dependencies>
-      <dependency>profile-lmu.policy.serviceportal:default</dependency>
+      <dependency>profile-lmu.policy.intranet:default</dependency>
   </dependencies>
 </metadata>
