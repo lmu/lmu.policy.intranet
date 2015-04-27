@@ -54,8 +54,7 @@ def _setupGroups(context):
 
 
 def _setupBaseContent(context):
-    for elem in base_content:
-        (oid, oval) = elem
+    for oid, oval in base_content.iteritems():
         try:
             container = api.content.get(path=oval['path'])
             if not oid in container.keys():
@@ -75,8 +74,6 @@ def _setupBaseContent(context):
             print(e.message)
         except Exception as e:
             print(e.message)
-            print(sys.exc_info()[0])
-            import ipdb; ipdb.set_trace()
 
 
 def importDemoContent(context):
@@ -143,8 +140,10 @@ def _setupDemoPolls(context):
                 container=container,
                 title=oval['title'],
                 description=oval['description'],
+                creators=(oval['author'],),
             )
             api.content.transition(obj=entry, to_state='internally_published')
+            entry.modification_date = DateTime(oval['modification_date'])
         except BadRequest as e:
             print(e.message)
         except Exception as e:
@@ -165,9 +164,11 @@ def _setupDemoPinnwandEntries(context):
                 description=oval['description'],
                 text=RichTextValue(oval['text'], 'text/html', 'text/html'),
                 image=NamedBlobImage(data=imageFile.read()) if imageFile else '',
-                image_caption=oval['image_caption']
+                image_caption=oval['image_caption'],
+                creators=(oval['author'],),
             )
             api.content.transition(obj=entry, to_state='internally_published')
+            entry.modification_date = DateTime(oval['modification_date'])
         except BadRequest as e:
             print(e.message)
         except Exception as e:

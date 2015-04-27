@@ -18,17 +18,17 @@ required_groups = {
     }
 }
 
-base_content = [
-    ('blog-mit', {
+base_content = {
+    'blog-mit': {
         'title': 'Blog mit!',
         'description': 'Mitarbeiten, Mitreden, Mitmachen.',
         'type': 'Blog Folder',
         'path': '/'
-    }),
-    ('umfragen', {
+    },
+    'umfragen': {
         'title': 'Umfragen',
         'description': '',
         'type': 'Folder',
         'path': '/'
-    })
-]
+    }
+}
