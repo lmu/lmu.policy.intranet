@@ -98,6 +98,7 @@ def _setupDemoUsers(context):
                 api.user.create(
                     email=udata['email'],
                     username=uid,
+                    password=udata['password'],
                     properties=udata['properties']
                 )
             except BadRequest as e:
@@ -110,6 +111,8 @@ def _setupDemoBlogEntries(context):
     for oid, oval in demo_blog_entries.iteritems():
         try:
             container = api.content.get(path=oval['path'])
+            if oid in container:
+                continue
             imageFile = context.openDataFile(os.path.dirname(__file__) + '/' + oval['image'], 'images') if oval['image'] else None
             entry = api.content.create(
                 id=oid,
@@ -134,6 +137,8 @@ def _setupDemoPolls(context):
     for oid, oval in demo_polls.iteritems():
         try:
             container = api.content.get(path=oval['path'])
+            if oid in container:
+                continue
             entry = api.content.create(
                 id=oid,
                 type='Poll',
@@ -155,6 +160,8 @@ def _setupDemoPinnwandEntries(context):
     for oid, oval in demo_pinnwand_entries.iteritems():
         try:
             container = api.content.get(path=oval['path'])
+            if oid in container:
+                continue
             imageFile = context.openDataFile(os.path.dirname(__file__) + '/' + oval['image'], 'images') if oval['image'] else None
             entry = api.content.create(
                 id=oid,

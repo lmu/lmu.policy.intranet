@@ -3,16 +3,26 @@
 demo_users = {
     'Brady': {
         'email': 'demo@lmu.de',
+        'password': 'Admin;-)',
         'properties': {
             'fullname': 'Stephanie Brady',
         }
     },
     'Simon.Kirner': {
         'email': 'demo@lmu.de',
+        'password': 'Admin;-)',
         'properties': {
             'fullname': 'Simon Kirner',
         }
-    }
+    },
+    'Alexander.Loechel': {
+        'email': 'Alexander.Loechel@lmu.de',
+        'password': 'Admin;-)',
+        'properties': {
+            'fullname': 'Alexander Loechel',
+            'location': 'Martiusstr. 4; München',
+        }
+    },
 }
 
 
