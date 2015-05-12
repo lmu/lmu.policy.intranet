@@ -46,7 +46,7 @@ demo_blog_entries = {
         <p>Ich freue mich auf nächstes Jahr und werde wieder am Start sein.</p>""",
         'path': '/blog-mit',
         'image': 'demo-content/Aktionstag Gesundheit 006.jpg',
-        'image_caption': u'Aktionstag Gesundheit - Reisen-Kicker',
+        'image_caption': u'Aktionstag Gesundheit - Riesen-Kicker',
         'author': 'Simon.Kirner',
         'modification_date': '2014/10/02 16:09:00.000000 GMT+2'
     },
