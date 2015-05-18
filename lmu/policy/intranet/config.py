@@ -30,5 +30,11 @@ base_content = {
         'description': '',
         'type': 'Folder',
         'path': '/'
-    }
+    },
+    'pinnwand': {
+        'title': 'Die ZUV Pinnwand',
+        'description': 'Tauschen. Helfen. Kaufen.',
+        'type': 'Pinnwand Folder',
+        'path': '/'
+    },
 }

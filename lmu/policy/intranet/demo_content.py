@@ -6,14 +6,16 @@ demo_users = {
         'password': 'Admin;-)',
         'properties': {
             'fullname': 'Stephanie Brady',
-        }
+        },
+        'roles': ('Member', 'in_members')
     },
     'Simon.Kirner': {
         'email': 'demo@lmu.de',
         'password': 'Admin;-)',
         'properties': {
             'fullname': 'Simon Kirner',
-        }
+        },
+        'roles': ('Member', 'in_members')
     },
     'Alexander.Loechel': {
         'email': 'Alexander.Loechel@lmu.de',
@@ -21,7 +23,8 @@ demo_users = {
         'properties': {
             'fullname': 'Alexander Loechel',
             'location': 'Martiusstr. 4; München',
-        }
+        },
+        'roles': ('Member', 'Manager', 'cms-admins', 'in_sp_supportteam', 'in_members')
     },
 }
 
@@ -76,9 +79,38 @@ demo_blog_entries = {
 }
 
 demo_polls = {
-    '': {}
+    'und-sie-bewegt-sich-doch': {
+        'title': 'Und sie bewegt sich doch, die ZUV.',
+        'poll_type': ''
+    }
 }
 
 demo_pinnwand_entries = {
-    '': {}
+    '115qm-wohnung-in-schwabing': {
+        'title': u'115pm Wohung in Schwabing',
+        'text': u'<p>3-Zimmer Wohnung inmitten des lebhaften Kunst- und Pinakothekenviertels zu vermieten...</p>',
+        'path': '/pinnwand',
+        'image': 'demo-content/wohung-schwabingen.jpg',
+        'image_caption': '',
+        'author': 'Simon.Kirner',
+        'modification_date': '2014/10/02 12:43:00.000000 GMT+2'
+    },
+    'fahrgemeinschaft-von-altdorf-bei-landshut-in-die-leo3': {
+        'title': u'Fahrgemeinschaft von Altdorf bei Landshut in die Leo3',
+        'text': u'<p>Ich fahre regelmäßig Montag bis Donnerstag morgens nach München und mittags zurück. Wer hat die gleiche Strecke?</p>',
+        'path': '/pinnwand',
+        'image': '',
+        'image_caption': '',
+        'author': 'Brady',
+        'modification_date': '2014/10/02 13:32:00.000000 GMT+2'
+    },
+    'tolles-sofa': {
+        'title': u'Tolles Sofa!',
+        'text': u'<p>Das Sofa muss raus. Jetzt für 150€ abzugeben.</p>',
+        'path': '/pinnwand',
+        'image': 'demo-content/sofa.jpg',
+        'image_caption': '',
+        'author': 'Simon.Kirner',
+        'modification_date': '2014/10/02 14:27:00.000000 GMT+2'
+    },
 }

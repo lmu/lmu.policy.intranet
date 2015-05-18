@@ -87,7 +87,7 @@ def importDemoContent(context):
     _setupDemoUsers(context)
     _setupDemoBlogEntries(context)
     #_setupDemoPolls(context)
-    #_setuoDemoPinnwandEntries(context)
+    _setupDemoPinnwandEntries(context)
 
 
 def _setupDemoUsers(context):
@@ -99,6 +99,7 @@ def _setupDemoUsers(context):
                     email=udata['email'],
                     username=uid,
                     password=udata['password'],
+                    roles=udata['roles'],
                     properties=udata['properties']
                 )
             except BadRequest as e:
