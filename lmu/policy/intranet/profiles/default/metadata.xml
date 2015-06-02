@@ -8,6 +8,6 @@
       <dependency>profile-lmu.theme.intranet:default</dependency>
       <dependency>profile-lmu.contenttypes.polls:default</dependency>
       <dependency>profile-lmu.contenttypes.blog:default</dependency>
-      <!--<dependency>profile-lmu.contenttypes.pinnwand:default</dependency>-->
+      <dependency>profile-lmu.contenttypes.pinnwand:default</dependency>
   </dependencies>
 </metadata>

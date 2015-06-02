@@ -63,12 +63,14 @@ def _setupBaseContent(context):
                     container=container,
                     type=oval['type'],
                     title=oval['title'],
-                    description=oval['description']
+                    description=oval['description'],
+                    text=oval['text']
                 )
             else:
                 folder = container.get(oid)
                 folder.title = oval['title']
                 folder.description = oval['description']
+                folder.text = oval['text']
             api.content.transition(obj=folder, to_state='published')
         except BadRequest as e:
             print(e.message)
@@ -169,7 +171,7 @@ def _setupDemoPinnwandEntries(context):
                 type='Pinnwand Entry',
                 container=container,
                 title=oval['title'],
-                description=oval['description'],
+                #description=oval.get('description', ''),
                 text=RichTextValue(oval['text'], 'text/html', 'text/html'),
                 image=NamedBlobImage(data=imageFile.read()) if imageFile else '',
                 image_caption=oval['image_caption'],

@@ -80,8 +80,8 @@ demo_blog_entries = {
 
 demo_polls = {
     'und-sie-bewegt-sich-doch': {
+        'poll_type': 'Star Poll',
         'title': 'Und sie bewegt sich doch, die ZUV.',
-        'poll_type': ''
     }
 }
 
@@ -111,6 +111,15 @@ demo_pinnwand_entries = {
         'image': 'demo-content/sofa.jpg',
         'image_caption': '',
         'author': 'Simon.Kirner',
+        'modification_date': '2014/10/02 14:27:00.000000 GMT+2'
+    },
+    'damenfahrrad': {
+        'title': u'Damenfahrrad',
+        'text': u'<p>Das Sofa muss raus. Jetzt für 150€ abzugeben.</p>',
+        'path': '/pinnwand',
+        'image': '',
+        'image_caption': '',
+        'author': 'Katharine.Linges',
         'modification_date': '2014/10/02 14:27:00.000000 GMT+2'
     },
 }

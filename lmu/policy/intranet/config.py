@@ -22,18 +22,27 @@ base_content = {
     'blog-mit': {
         'title': 'Blog mit!',
         'description': 'Mitarbeiten, Mitreden, Mitmachen.',
+        'text': """
+
+""",
         'type': 'Blog Folder',
         'path': '/'
     },
     'umfragen': {
         'title': 'Umfragen',
         'description': '',
-        'type': 'Folder',
+        'text': """
+
+""",
+        'type': 'Poll Folder',
         'path': '/'
     },
     'pinnwand': {
         'title': 'Die ZUV Pinnwand',
         'description': 'Tauschen. Helfen. Kaufen.',
+        'text': """
+
+""",
         'type': 'Pinnwand Folder',
         'path': '/'
     },
