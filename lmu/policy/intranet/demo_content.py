@@ -97,19 +97,6 @@ demo_blog_entries = {
         'author': 'Brady',
         'modification_date': '2014/10/02 13:09:00.000000 GMT+2'
     },
-
-    'rollcontainer-gebraucht-aber-gut-in-schuss': {
-        'title': u'Rollcontainer - gebraucht, aber gut in Schuss',
-        'description': '',
-        'text': u"""<p>Verkaufe einen Rollcontainer mit 3 Schubladen, oben hat er eine kleine Macke (siehe Foto).</p>
-<p>Maße:<br />Tiefe: 41 cm<br />Höhe:57 cm<br />Breite: 41 cm</p>
-<p>5 Euro VB</p>""",
-        'path': '/blog-mit',
-        'image': 'demo-content/Rollcontainer.jpg',
-        'image_caption': u'Rollcontainer',
-        'author': 'Katrin.Groeschel',
-        'modification_date': '2014/10/02 13:09:00.000000 GMT+2'
-    },
 }
 
 demo_polls = {
@@ -175,5 +162,18 @@ demo_pinnwand_entries = {
         'image_caption': '',
         'author': 'Katharine.Linges',
         'modification_date': '2014/10/03 14:27:00.000000 GMT+2'
+    },
+    'rollcontainer-gebraucht-aber-gut-in-schuss': {
+        'category': 'Biete',
+        'title': u'Rollcontainer - gebraucht, aber gut in Schuss',
+        'description': '',
+        'text': u"""<p>Verkaufe einen Rollcontainer mit 3 Schubladen, oben hat er eine kleine Macke (siehe Foto).</p>
+<p>Maße:<br />Tiefe: 41 cm<br />Höhe:57 cm<br />Breite: 41 cm</p>
+<p>5 Euro VB</p>""",
+        'path': '/pinnwand',
+        'image': 'demo-content/Rollcontainer.jpg',
+        'image_caption': u'Rollcontainer',
+        'author': 'Katrin.Groeschel',
+        'modification_date': '2014/10/02 13:09:00.000000 GMT+2'
     },
 }
