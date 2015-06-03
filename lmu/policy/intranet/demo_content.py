@@ -3,29 +3,50 @@
 demo_users = {
     'Brady': {
         'email': 'demo@lmu.de',
-        'password': 'Admin;-)',
+        'password': 'Test@IUK',
         'properties': {
             'fullname': 'Stephanie Brady',
+            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/b/brady_stephanie/index.html',
         },
         'roles': ('Member', 'in_members')
     },
     'Simon.Kirner': {
         'email': 'demo@lmu.de',
-        'password': 'Admin;-)',
+        'password': 'Test@IUK',
         'properties': {
             'fullname': 'Simon Kirner',
+            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/k/kirner_simon/index.html',
         },
         'roles': ('Member', 'in_members')
     },
     'Alexander.Loechel': {
         'email': 'Alexander.Loechel@lmu.de',
-        'password': 'Admin;-)',
+        'password': 'Test@IUK',
         'properties': {
             'fullname': 'Alexander Loechel',
             'location': 'Martiusstr. 4; München',
+            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/l/loechel_alexander/index.html',
         },
         'roles': ('Member', 'Manager', 'cms-admins', 'in_sp_supportteam', 'in_members')
     },
+    'Katharine.Linges': {
+        'email': 'demo@lmu.de',
+        'password': 'Test@IUK',
+        'properties': {
+            'fullname': 'Katharine Linges',
+            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/l/linges_katharine/index.html',
+        },
+        'roles': ('Member', 'in_sp_supportteam', 'in_members')
+    },
+    'Katrin.Groeschel': {
+        'email': 'demo@lmu.de',
+        'password': 'Test@IUK',
+        'properties': {
+            'fullname': 'Katrin Gröschel',
+            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/g/groeschel_katrin/index.html',
+        },
+        'roles': ('Member', 'in_sp_supportteam', 'in_members')
+    }
 }
 
 
@@ -76,17 +97,45 @@ demo_blog_entries = {
         'author': 'Brady',
         'modification_date': '2014/10/02 13:09:00.000000 GMT+2'
     },
+
+    'rollcontainer-gebraucht-aber-gut-in-schuss': {
+        'title': u'Rollcontainer - gebraucht, aber gut in Schuss',
+        'description': '',
+        'text': u"""<p>Verkaufe einen Rollcontainer mit 3 Schubladen, oben hat er eine kleine Macke (siehe Foto).</p>
+<p>Maße:<br />Tiefe: 41 cm<br />Höhe:57 cm<br />Breite: 41 cm</p>
+<p>5 Euro VB</p>""",
+        'path': '/blog-mit',
+        'image': 'demo-content/Rollcontainer.jpg',
+        'image_caption': u'Rollcontainer',
+        'author': 'Katrin.Groeschel',
+        'modification_date': '2014/10/02 13:09:00.000000 GMT+2'
+    },
 }
 
 demo_polls = {
     'und-sie-bewegt-sich-doch': {
-        'poll_type': 'Star Poll',
+        'poll_type': 'Agree Disagree Poll',
+        'path': '/umfragen',
         'title': 'Und sie bewegt sich doch, die ZUV.',
+        'description': '',
+        'author': 'Katharine.Linges',
+        'modification_date': '2014/10/02 12:43:00.000000 GMT+2',
+        'state': 'open',
+    },
+    'wie-gut-hilft-ihnen-unser-service-portal-bei-der-arbeit': {
+        'poll_type': 'Star Poll',
+        'path': '/umfragen',
+        'title': 'Wie gut hilft Ihnen unser Service-Portal bei der Arbeit?',
+        'description': 'Seien Sie ehrlich, nur so können wir besser werden.',
+        'author': 'Katharine.Linges',
+        'modification_date': '2014/10/02 12:43:00.000000 GMT+2',
+        'state': 'open',
     }
 }
 
 demo_pinnwand_entries = {
     '115qm-wohnung-in-schwabing': {
+        'category': 'Biete',
         'title': u'115pm Wohung in Schwabing',
         'text': u'<p>3-Zimmer Wohnung inmitten des lebhaften Kunst- und Pinakothekenviertels zu vermieten...</p>',
         'path': '/pinnwand',
@@ -96,6 +145,7 @@ demo_pinnwand_entries = {
         'modification_date': '2014/10/02 12:43:00.000000 GMT+2'
     },
     'fahrgemeinschaft-von-altdorf-bei-landshut-in-die-leo3': {
+        'category': 'Suche',
         'title': u'Fahrgemeinschaft von Altdorf bei Landshut in die Leo3',
         'text': u'<p>Ich fahre regelmäßig Montag bis Donnerstag morgens nach München und mittags zurück. Wer hat die gleiche Strecke?</p>',
         'path': '/pinnwand',
@@ -105,6 +155,7 @@ demo_pinnwand_entries = {
         'modification_date': '2014/10/02 13:32:00.000000 GMT+2'
     },
     'tolles-sofa': {
+        'category': 'Biete',
         'title': u'Tolles Sofa!',
         'text': u'<p>Das Sofa muss raus. Jetzt für 150€ abzugeben.</p>',
         'path': '/pinnwand',
@@ -114,12 +165,15 @@ demo_pinnwand_entries = {
         'modification_date': '2014/10/02 14:27:00.000000 GMT+2'
     },
     'damenfahrrad': {
+        'category': 'Suche',
         'title': u'Damenfahrrad',
-        'text': u'<p>Das Sofa muss raus. Jetzt für 150€ abzugeben.</p>',
+        'text': u'''<p>Liebe Kolleginnen und Kollegen,</p>
+        <p>ich bin auf der Suche nach einem gut erhaltenen Damenfahrrad, möglichst 28 Zoll.
+        Falls jemand einen Tipp hat oder noch ein gebrauchtes Rad im Keller stehen hat, würde ich mich über eine E-Mail sehr freuen!</p>''',
         'path': '/pinnwand',
         'image': '',
         'image_caption': '',
         'author': 'Katharine.Linges',
-        'modification_date': '2014/10/02 14:27:00.000000 GMT+2'
+        'modification_date': '2014/10/03 14:27:00.000000 GMT+2'
     },
 }
