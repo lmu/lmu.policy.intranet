@@ -1,25 +1,7 @@
 # -*- coding: utf-8 -*-
 
 demo_users = {
-    'Brady': {
-        'email': 'demo@lmu.de',
-        'password': 'Test@IUK',
-        'properties': {
-            'fullname': 'Stephanie Brady',
-            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/b/brady_stephanie/index.html',
-        },
-        'roles': ('Member', 'in_members')
-    },
-    'Simon.Kirner': {
-        'email': 'demo@lmu.de',
-        'password': 'Test@IUK',
-        'properties': {
-            'fullname': 'Simon Kirner',
-            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/k/kirner_simon/index.html',
-        },
-        'roles': ('Member', 'in_members')
-    },
-    'Alexander.Loechel': {
+    '72C918A84D785B9F@lmu.de': {  # Alexander Loechel
         'email': 'Alexander.Loechel@lmu.de',
         'password': 'Test@IUK',
         'properties': {
@@ -29,7 +11,7 @@ demo_users = {
         },
         'roles': ('Member', 'Manager', 'cms-admins', 'in_sp_supportteam', 'in_members')
     },
-    'Katharine.Linges': {
+    '5B4187806EA6E3B0@lmu.de': {  # Katharine Linges
         'email': 'demo@lmu.de',
         'password': 'Test@IUK',
         'properties': {
@@ -38,7 +20,7 @@ demo_users = {
         },
         'roles': ('Member', 'in_sp_supportteam', 'in_members')
     },
-    'Katrin.Groeschel': {
+    '5B9282DB46605F33@lmu.de': {  # Katrin Gröschel
         'email': 'demo@lmu.de',
         'password': 'Test@IUK',
         'properties': {
@@ -46,6 +28,60 @@ demo_users = {
             'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/g/groeschel_katrin/index.html',
         },
         'roles': ('Member', 'in_sp_supportteam', 'in_members')
+    },
+    '3ABBA66EEABFBA4A@lmu.de': {  # Christoph Zehetleitner
+        'email': 'demo@lmu.de',
+        'password': 'Test@IUK',
+        'properties': {
+            'fullname': 'Christoph Zehetleitner',
+            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/z/zehetleitner_christoph/index.html',
+        },
+        'roles': ('Member', 'in_sp_supportteam', 'in_members')
+    },
+    'D3A7AFBDCBCDFAEF@lmu.de': {  # Stephanie Brady
+        'email': 'demo@lmu.de',
+        'password': 'Test@IUK',
+        'properties': {
+            'fullname': 'Stephanie Brady',
+            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/b/brady_stephanie/index.html',
+        },
+        'roles': ('Member', 'in_members')
+    },
+    '1AFCC515C117A98D@lmu.de': {  # Simon.Kirner
+        'email': 'demo@lmu.de',
+        'password': 'Test@IUK',
+        'properties': {
+            'fullname': 'Simon Kirner',
+            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/k/kirner_simon/index.html',
+        },
+        'roles': ('Member', 'in_members')
+    },
+    '3624AAC8BBF0A28E@lmu.de': {  # Seyhan Karabulut
+        'email': 'demo@lmu.de',
+        'password': 'Test@IUK',
+        'properties': {
+            'fullname': 'Seyhan Karabulut',
+            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/k/karabulut_seyhan/index.html',
+        },
+        'roles': ('Member', 'in_members')
+    },
+    'AEA7ED2EEFDD4E7A@lmu.de': {  # Elmar Thalhammer
+        'email': 'demo@lmu.de',
+        'password': 'Test@IUK',
+        'properties': {
+            'fullname': 'Elmar Thalhammer',
+            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/t/thalhammer_elmar/index.html',
+        },
+        'roles': ('Member', 'in_members')
+    },
+    'D1D7CEAFBBABCDAC@lmu.de': {  # Jan Ingenhaag
+        'email': 'demo@lmu.de',
+        'password': 'Test@IUK',
+        'properties': {
+            'fullname': 'Jan Ingenhaag',
+            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/i/ingenhaag_jan/index.html',
+        },
+        'roles': ('Member', 'in_members')
     }
 }
 
@@ -71,7 +107,7 @@ demo_blog_entries = {
         'path': '/blog-mit',
         'image': 'demo-content/Aktionstag Gesundheit 006.jpg',
         'image_caption': u'Aktionstag Gesundheit - Riesen-Kicker',
-        'author': 'Simon.Kirner',
+        'author': '72C918A84D785B9F@lmu.de', #'Simon.Kirner',
         'modification_date': '2014/10/02 16:09:00.000000 GMT+2'
     },
     'wer-hat-erfahrungen-mit-online-anwendungen-fuer-die-reisekosten-administration': {
@@ -82,7 +118,7 @@ demo_blog_entries = {
         'path': '/blog-mit',
         'image': '',
         'image_caption': u'',
-        'author': 'Brady',
+        'author': '72C918A84D785B9F@lmu.de', #'Brady',
         'modification_date': '2014/10/02 15:32:00.000000 GMT+2'
     },
     'organisationsentwicklung-an-der-universitaet-lund': {
@@ -94,7 +130,44 @@ demo_blog_entries = {
         'path': '/blog-mit',
         'image': 'demo-content/lunds-universitets-huvudbyggnad.jpg',
         'image_caption': u'Universität Lund',
-        'author': 'Brady',
+        'author': '72C918A84D785B9F@lmu.de', #'Brady',
+        'modification_date': '2014/10/02 13:09:00.000000 GMT+2'
+    },
+    'mitreden-bei-blog-mit': {
+        'title': u'Mitreden bei "Blog Mit!',
+        'description': '',
+        'text': u"""<p>Der ZUV-Mitarbeiterblog „Blog Mit!“ bietet Raum für Ihre Anliegen: Beschäftigt Sie ein Thema aus Ihrer täglichen Arbeit, das Sie mit einem größeren Kollegenkreis diskutieren wollen? Möchten Sie Ihr Erfahrungswissen mit anderen teilen oder bringt Sie das Know-how von anderen Kolleginnen und Kollegen bei Ihrer Fragestellung weiter? Wollen Sie den anderen das schönste Foto vom letzten Betriebsausflug oder vom Firmenlauf zeigen? </p>
+<p>Dann laden wir Sie herzlich ein, in „Blog Mit!“ Beiträge zu verfassen oder zu kommentieren – selbstverständlich während Ihrer Arbeitszeit. Die Themen unserer täglichen Arbeit  sollen dabei im Mittelpunkt stehen, unsere Projekte, Prozesse, Fragestellungen und Dienstleistungen, aber auch das, was das tägliche Zusammenarbeiten noch ausmacht. </p>
+<p>„Blog Mit!“ soll zum offenen und transparenten Austausch von Informationen und Meinungen innerhalb der ZUV beitragen und die Kolleginnen und Kollegen über die Hierarchieebenen hinweg besser vernetzen. Alle Beiträge können deshalb von den Mitarbeitern der ZUV kommentiert werden.</p>
+<p>Um eine faire und respektvolle Kommunikationskultur sicherzustellen, erscheinen alle Beiträge und Kommentare mit dem Namen des Verfassers. Darüber hinaus haben wir  einige Regeln und Tipps zusammengestellt, die den Umgang mit dem Mitarbeiter-Blog erleichtern. </p>
+<p>Wir freuen uns auf Ihre Beiträge und Kommentare!</p>""",
+        'path': '/blog-mit',
+        'image': '',
+        'image_caption': u'',
+        'author': '72C918A84D785B9F@lmu.de', #'Linges',
+        'modification_date': '2014/10/02 13:09:00.000000 GMT+2'
+    },
+    'mitarbeiterfotos-im-zuv-intranet': {
+        'title': u'Mitarbeiterfotos im ZUV-Intranet',
+        'description': '',
+        'text': u"""<p>Da das ZUV-Intranet nicht nur als reine Informationsplattform für ZUV-Mitarbeiter, sondern auch zur Vernetzung untereinander gedacht ist, halte ich es für sehr sinnvoll, wenn alle Mitarbeiter auf ihrer Personenprofilseite ein Foto von sich platzieren. Ich gebe zu, dass das Thema "Gesichter merken und wieder erkennen" nicht zu meinen herausragendsten Fähigkeiten zählt. Es passiert mir immer wieder, dass ich eine Kollegin oder einen Kollegen auf dem Gang begegne und nicht auf Anhieb weiss um wen es sich dabei handelt. Entsprechend aufbereitete Personenprofilseiten im ZUV-Intranet würden mir enorm helfen. Wenn man dann noch neben einem freundlichen "Guten Tag Herr Müller" im richtigen Moment ein zusätzliches "Ach übrigens, alles Gute zum Geburtstag" anbringen kann, dann steht einer engeren Vernetzung der einzelnen ZUV-Mitarbeiter nichts mehr im Weg.</p>""",
+        'path': '/blog-mit',
+        'image': '',
+        'image_caption': u'',
+        'author': '72C918A84D785B9F@lmu.de', #'',
+        'modification_date': '2014/10/02 13:09:00.000000 GMT+2'
+    },
+}
+
+empty_blog_entry = {
+    '': {
+        'title': u'',
+        'description': '',
+        'text': u"""""",
+        'path': '/blog-mit',
+        'image': '',
+        'image_caption': u'',
+        'author': '',
         'modification_date': '2014/10/02 13:09:00.000000 GMT+2'
     },
 }
@@ -105,7 +178,7 @@ demo_polls = {
         'path': '/umfragen',
         'title': 'Und sie bewegt sich doch, die ZUV.',
         'description': '',
-        'author': 'Katharine.Linges',
+        'author': '72C918A84D785B9F@lmu.de', #'Katharine.Linges',
         'modification_date': '2014/10/02 12:43:00.000000 GMT+2',
         'state': 'open',
     },
@@ -114,7 +187,7 @@ demo_polls = {
         'path': '/umfragen',
         'title': 'Wie gut hilft Ihnen unser Service-Portal bei der Arbeit?',
         'description': 'Seien Sie ehrlich, nur so können wir besser werden.',
-        'author': 'Katharine.Linges',
+        'author': '72C918A84D785B9F@lmu.de', #'Katharine.Linges',
         'modification_date': '2014/10/02 12:43:00.000000 GMT+2',
         'state': 'open',
     }
@@ -128,7 +201,7 @@ demo_pinnwand_entries = {
         'path': '/pinnwand',
         'image': 'demo-content/wohung-schwabingen.jpg',
         'image_caption': '',
-        'author': 'Simon.Kirner',
+        'author': '72C918A84D785B9F@lmu.de', #'Simon.Kirner',
         'modification_date': '2014/10/02 12:43:00.000000 GMT+2'
     },
     'fahrgemeinschaft-von-altdorf-bei-landshut-in-die-leo3': {
@@ -138,7 +211,7 @@ demo_pinnwand_entries = {
         'path': '/pinnwand',
         'image': '',
         'image_caption': '',
-        'author': 'Brady',
+        'author': '72C918A84D785B9F@lmu.de', #'Brady',
         'modification_date': '2014/10/02 13:32:00.000000 GMT+2'
     },
     'tolles-sofa': {
@@ -148,7 +221,7 @@ demo_pinnwand_entries = {
         'path': '/pinnwand',
         'image': 'demo-content/sofa.jpg',
         'image_caption': '',
-        'author': 'Simon.Kirner',
+        'author': '72C918A84D785B9F@lmu.de', #'Simon.Kirner',
         'modification_date': '2014/10/02 14:27:00.000000 GMT+2'
     },
     'damenfahrrad': {
@@ -160,7 +233,7 @@ demo_pinnwand_entries = {
         'path': '/pinnwand',
         'image': '',
         'image_caption': '',
-        'author': 'Katharine.Linges',
+        'author': '72C918A84D785B9F@lmu.de', #'Katharine.Linges',
         'modification_date': '2014/10/03 14:27:00.000000 GMT+2'
     },
     'rollcontainer-gebraucht-aber-gut-in-schuss': {
@@ -173,7 +246,7 @@ demo_pinnwand_entries = {
         'path': '/pinnwand',
         'image': 'demo-content/Rollcontainer.jpg',
         'image_caption': u'Rollcontainer',
-        'author': 'Katrin.Groeschel',
+        'author': '72C918A84D785B9F@lmu.de', #'Katrin.Groeschel',
         'modification_date': '2014/10/02 13:09:00.000000 GMT+2'
     },
 }
