@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<registry>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.anonymous_comments" interface="plone.app.discussion.interfaces.IDiscussionSettings" field="anonymous_comments">
+    <field type="plone.registry.field.Bool">
+      <default>False</default>
+      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="help_anonymous_comments">If selected, anonymous users are able to post comments without loggin in. It is highly recommended to use a captcha solution to prevent spam if this setting is enabled.</description>
+      <required>False</required>
+      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="label_anonymous_comments">Enable anonymous comments</title>
+    </field>
+    <value>False</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.anonymous_email_enabled" interface="plone.app.discussion.interfaces.IDiscussionSettings" field="anonymous_email_enabled">
+    <field type="plone.registry.field.Bool">
+      <default>False</default>
+      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="help_anonymous_email_enabled">If selected, anonymous user will have to give their email.</description>
+      <required>False</required>
+      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="label_anonymous_email_enabled">Enable anonymous email field</title>
+    </field>
+    <value>False</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.captcha" interface="plone.app.discussion.interfaces.IDiscussionSettings" field="captcha">
+    <field type="plone.registry.field.Choice">
+      <default>disabled</default>
+      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="help_captcha">Use this setting to enable or disable Captcha validation for comments. Install plone.formwidget.captcha, plone.formwidget.recaptcha, collective.akismet, or collective.z3cform.norobots if there are no options available.</description>
+      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="label_captcha">Captcha</title>
+      <vocabulary>plone.app.discussion.vocabularies.CaptchaVocabulary</vocabulary>
+    </field>
+    <value>disabled</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.globally_enabled" interface="plone.app.discussion.interfaces.IDiscussionSettings" field="globally_enabled">
+    <field type="plone.registry.field.Bool">
+      <default>False</default>
+      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="help_globally_enabled">If selected, users are able to post comments on the site. Though, you have to enable comments for specific content types, folders or content objects before users will be able to post comments.</description>
+      <required>False</required>
+      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="label_globally_enabled">Globally enable comments</title>
+    </field>
+    <value>True</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.moderation_enabled" interface="plone.app.discussion.interfaces.IDiscussionSettings" field="moderation_enabled">
+    <field type="plone.registry.field.Bool">
+      <default>False</default>
+      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="help_moderation_enabled">If selected, comments will enter a 'Pending' state in which they are invisible to the public. A user with the 'Review comments' permission ('Reviewer' or 'Manager') can approve comments to make them visible to the public. If you want to enable a custom comment workflow, you have to go to the types control panel.</description>
+      <required>False</required>
+      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="label_moderation_enabled">Enable comment moderation</title>
+    </field>
+    <value>False</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.moderator_email" interface="plone.app.discussion.interfaces.IDiscussionSettings" field="moderator_email">
+    <field type="plone.registry.field.ASCIILine">
+      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="help_moderator_email">Address to which moderator notifications will be sent.</description>
+      <required>False</required>
+      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="label_moderator_email">Moderator Email Address</title>
+    </field>
+    <value/>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.moderator_notification_enabled" interface="plone.app.discussion.interfaces.IDiscussionSettings" field="moderator_notification_enabled">
+    <field type="plone.registry.field.Bool">
+      <default>False</default>
+      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="help_moderator_notification_enabled">If selected, the moderator is notified if a comment needs attention. The moderator email address can be set below.</description>
+      <required>False</required>
+      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="label_moderator_notification_enabled">Enable moderator email notification</title>
+    </field>
+    <value>False</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.show_commenter_image" interface="plone.app.discussion.interfaces.IDiscussionSettings" field="show_commenter_image">
+    <field type="plone.registry.field.Bool">
+      <default>True</default>
+      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="help_show_commenter_image">If selected, an image of the user is shown next to the comment.</description>
+      <required>False</required>
+      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="label_show_commenter_image">Show commenter image</title>
+    </field>
+    <value>False</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.text_transform" interface="plone.app.discussion.interfaces.IDiscussionSettings" field="text_transform">
+    <field type="plone.registry.field.Choice">
+      <default>text/plain</default>
+      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="help_text_transform">Use this setting to choose if the comment text should be transformed in any way. You can choose between 'Plain text' and 'Intelligent text'. 'Intelligent text' converts plain text into HTML where line breaks and indentation is preserved, and web and email addresses are made into clickable links.</description>
+      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="label_text_transform">Comment text transform</title>
+      <vocabulary>plone.app.discussion.vocabularies.TextTransformVocabulary</vocabulary>
+    </field>
+    <value>text/plain</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.user_notification_enabled" interface="plone.app.discussion.interfaces.IDiscussionSettings" field="user_notification_enabled">
+    <field type="plone.registry.field.Bool">
+      <default>False</default>
+      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="help_user_notification_enabled">If selected, users can choose to be notified of new comments by email.</description>
+      <required>False</required>
+      <title xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="plone.app.discussion" ns0:translate="label_user_notification_enabled">Enable user email notification</title>
+    </field>
+    <value>False</value>
+  </record>
+</registry>
