@@ -151,10 +151,10 @@ demo_blog_entries = {
         'title': u'Mitarbeiterfotos im ZUV-Intranet',
         'description': '',
         'text': u"""<p>Da das ZUV-Intranet nicht nur als reine Informationsplattform für ZUV-Mitarbeiter, sondern auch zur Vernetzung untereinander gedacht ist, halte ich es für sehr sinnvoll, wenn alle Mitarbeiter auf ihrer Personenprofilseite ein Foto von sich platzieren.
-Ich gebe zu, dass das Thema "Gesichter merken und wieder erkennen" nicht zu meinen herausragendsten Fähigkeiten zählt.
-Es passiert mir immer wieder, dass ich eine Kollegin oder einen Kollegen auf dem Gang begegne und nicht auf Anhieb weiss um wen es sich dabei handelt.
-Entsprechend aufbereitete Personenprofilseiten im ZUV-Intranet würden mir enorm helfen.
-Wenn man dann noch neben einem freundlichen "Guten Tag Herr Müller" im richtigen Moment ein zusätzliches "Ach übrigens, alles Gute zum Geburtstag" anbringen kann, dann steht einer engeren Vernetzung der einzelnen ZUV-Mitarbeiter nichts mehr im Weg.</p>""",
+        Ich gebe zu, dass das Thema "Gesichter merken und wieder erkennen" nicht zu meinen herausragendsten Fähigkeiten zählt.
+        Es passiert mir immer wieder, dass ich eine Kollegin oder einen Kollegen auf dem Gang begegne und nicht auf Anhieb weiss um wen es sich dabei handelt.
+        Entsprechend aufbereitete Personenprofilseiten im ZUV-Intranet würden mir enorm helfen.
+        Wenn man dann noch neben einem freundlichen "Guten Tag Herr Müller" im richtigen Moment ein zusätzliches "Ach übrigens, alles Gute zum Geburtstag" anbringen kann, dann steht einer engeren Vernetzung der einzelnen ZUV-Mitarbeiter nichts mehr im Weg.</p>""",
         'path': '/blog-mit',
         'author': '3ABBA66EEABFBA4A@lmu.de',  # 'Christoph Zehetleitner',
         'date': '2015/19/16 16:10:00.000000 GMT+2'
@@ -170,10 +170,17 @@ Wenn man dann noch neben einem freundlichen "Guten Tag Herr Müller" im richtige
     'wo-einem-die-lmu-ueberall-begegnet': {
         'title': u'Wo einem die LMU überall begegnet ...',
         'description': '',
-        'text': u"""<p>Am 5. Juni war es wieder soweit: Der Stichtag für die Hörsaalanträge für das Wintersemester 2015/16 stand auf dem Programm; alle bis zu diesem Tag eingegangen Hörsaalanträge sind als ein Block an die Kolleginnen und Kollegen von der Zentralen Hörsaalverwaltung übermittelt worden und werden gleichrangig behandelt. Die Anzahl der Anträge steigt dabei kontinuierlich - diesmal waren es 8.147 Raumanträge, die für zentral verwaltete Hörsäle gestellt wurden. Wenn man sich diese beeindruckende Zahl einmal vor Augen führt, ist es erstaunlich, dass die Bearbeitung dieses Berges von Anträgen gerade einmal sechs bis acht Wochen dauern wird.</p>
-<p>In diesem Zusammenhang bin ich immer wieder erstaunt, über wie viele Gebäude und vor allem Räume die LMU verfügt; fast im ganzen Stadtgebiet und auch darüber hinaus stößt man auf sie. Als ich letztes Jahr auf den Wendelstein gestiegen bin, kam ich kurz vor dem Gipfel an einem LMU-Schild vorbei. Überrascht war ich ob des weithin sichtbaren Observatoriums zwar nicht, aber schmunzeln musste ich trotzdem kurz: Selbst auf über 1.800 Metern sagt die LMU noch kurz "Hallo"...</p>
-<p>Bei LSF-Schulungen (in denen es i. d. R. auch um Raumbuchungen geht) komme ich auch gerne an den Arbeitsplatz unserer Kunden, so dass ich schon zu "Außenstellen" wie z. B. dem Biozentrum in Martinsried reisen durfte. Auch wenn man normalerweise überall gut mit den öffentlichen Verkehrsmitteln hinkommt, habe ich diesen Außentermin zum Anlass genommen, um die Kooperation mit DriveNow zu testen (auch weil der Campus in Martinsried kürzlich zum Geschäftsgebiet hinzugefügt worden war). Um es kurz zu machen: Es war erfreulich unkompliziert, das Auto anzumieten; und Spaß hat die Fahrt bei schönem Wetter in einem schönen Mini Cabrio darüber hinaus auch noch gemacht. Ich könnte mir vorstellen, dass dieses Angebot auch für andere Kolleginnen und Kollegen interessant ist, die es auch mal in die "Randgebiete" der LMU verschlägt.</p>
-</p>""",
+        'text': u"""<p>Am 5. Juni war es wieder soweit:
+        Der Stichtag für die Hörsaalanträge für das Wintersemester 2015/16 stand auf dem Programm; alle bis zu diesem Tag eingegangen Hörsaalanträge sind als ein Block an die Kolleginnen und Kollegen von der Zentralen Hörsaalverwaltung übermittelt worden und werden gleichrangig behandelt.
+        Die Anzahl der Anträge steigt dabei kontinuierlich - diesmal waren es 8.147 Raumanträge, die für zentral verwaltete Hörsäle gestellt wurden.
+        Wenn man sich diese beeindruckende Zahl einmal vor Augen führt, ist es erstaunlich, dass die Bearbeitung dieses Berges von Anträgen gerade einmal sechs bis acht Wochen dauern wird.</p>
+         <p>In diesem Zusammenhang bin ich immer wieder erstaunt, über wie viele Gebäude und vor allem Räume die LMU verfügt; fast im ganzen Stadtgebiet und auch darüber hinaus stößt man auf sie.
+         Als ich letztes Jahr auf den Wendelstein gestiegen bin, kam ich kurz vor dem Gipfel an einem LMU-Schild vorbei.
+         Überrascht war ich ob des weithin sichtbaren Observatoriums zwar nicht, aber schmunzeln musste ich trotzdem kurz: Selbst auf über 1.800 Metern sagt die LMU noch kurz "Hallo"...</p>
+         <p>Bei LSF-Schulungen (in denen es i. d. R. auch um Raumbuchungen geht) komme ich auch gerne an den Arbeitsplatz unserer Kunden, so dass ich schon zu "Außenstellen" wie z. B. dem Biozentrum in Martinsried reisen durfte.
+         Auch wenn man normalerweise überall gut mit den öffentlichen Verkehrsmitteln hinkommt, habe ich diesen Außentermin zum Anlass genommen, um die Kooperation mit DriveNow zu testen (auch weil der Campus in Martinsried kürzlich zum Geschäftsgebiet hinzugefügt worden war).
+         Um es kurz zu machen: Es war erfreulich unkompliziert, das Auto anzumieten; und Spaß hat die Fahrt bei schönem Wetter in einem schönen Mini Cabrio darüber hinaus auch noch gemacht.
+         Ich könnte mir vorstellen, dass dieses Angebot auch für andere Kolleginnen und Kollegen interessant ist, die es auch mal in die "Randgebiete" der LMU verschlägt.</p>""",
         'path': '/blog-mit',
         'image': '',
         'image_caption': u'',
@@ -272,26 +279,13 @@ demo_pinnwand_entries = {
         'title': u'Rollcontainer - gebraucht, aber gut in Schuss',
         'description': '',
         'text': u"""<p>Verkaufe einen Rollcontainer mit 3 Schubladen, oben hat er eine kleine Macke (siehe Foto).</p>
-<p>Maße:<br />Tiefe: 41 cm<br />Höhe:57 cm<br />Breite: 41 cm</p>
-<p>5 Euro VB</p>""",
+        <p>Maße:<br />Tiefe: 41 cm<br />Höhe:57 cm<br />Breite: 41 cm</p>
+        <p>5 Euro VB</p>""",
         'path': '/pinnwand',
         'author': '72C918A84D785B9F@lmu.de',  # 'Katrin.Groeschel',
         'date': '2014/10/02 13:09:00.000000 GMT+2'
     },
 }
-
-
-"""
-weitere Bilder
-'path': '',
-        'image': 'demo-content\Fotos nach Blogeinträgen\Erholung garantiert\strasse-300x225, strasse-durch-die-wueste-300x225, wald, weg-wiese-strasse,  wueste-ende-strasse',
-
-        'path': '/blog-mit/demo-content\Fotos nach Blogeinträgen\Wo einem die LMU überall begegnet',
-        'image': 'demo-content\Fotos nach Blogeinträgen\Wo einem die LMU überall begegnet: berg, gipfel, wanderung',
-
-        'path': '/blog-mit//verloren-und-gewonnen-am-aktionstag-gesundheit',
-        'image': 'demo-content\Aktionstag Gesundheit 006',
-"""
 
 demo_files_images = {
     'wald.jpg': {
@@ -355,6 +349,7 @@ demo_files_images = {
         'description': u'Rollcontainer',
         'src': 'demo-content/Rollcontainer.jpg',
         'target': '/pinnwand',
-        'type': 'Image'
+        'type': 'Image',
+        'author': '72C918A84D785B9F@lmu.de',  # 'Katrin.Groeschel',
     },
 }
