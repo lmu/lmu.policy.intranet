@@ -3,6 +3,8 @@
   <version>1000</version>
   <dependencies>
       <!--<dependency>profile-Products.CMFPlone:default</dependency>-->
+      <dependency>profile-plone.app.caching:default</dependency>
+      <dependency>profile-plone.app.caching:without-caching-proxy</dependency>
       <dependency>profile-plone.app.contenttypes:default</dependency>
       <dependency>profile-lmu.policy.base:default</dependency>
       <dependency>profile-lmu.theme.intranet:default</dependency>
