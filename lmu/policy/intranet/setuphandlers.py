@@ -6,11 +6,18 @@ import sys
 
 from DateTime import DateTime
 
+from Products.CMFPlone.utils import safe_unicode
 from plone import api
+from plone.app.layout.navigation.root import getNavigationRoot
 from plone.app.textfield.value import RichTextValue
 from plone.namedfile import NamedBlobImage
+from plone.registry.interfaces import IRegistry
+from zope.component import getUtility
 
 from zExceptions import BadRequest
+
+from lmu.policy.base.controlpanel import ILMUSettings
+from lmu.policy.base.controlpanel import TitleLanguagePair
 
 from lmu.policy.intranet.config import base_content
 from lmu.policy.intranet.config import required_groups
@@ -30,6 +37,7 @@ def setupVarious(context):
 
     _setupGroups(context)
     _setupBaseContent(context)
+    _setupBreadcrumbs(context)
 
 
 def _setupGroups(context):
@@ -188,3 +196,14 @@ def _setupDemoPinnwandEntries(context):
         except Exception as e:
             print(e.message)
             #import ipdb; ipdb.set_trace()
+
+
+def _setupBreadcrumbs(context):
+    registry = getUtility(IRegistry)
+    lmu_settings = registry.forInterface(ILMUSettings)
+    portal = context.getSite()
+    root = portal.unrestrictedTraverse(getNavigationRoot(portal)).absolute_url()
+    url = safe_unicode(root) + u'/index.html'
+    lmu_settings.breadcrumb_1_url = url
+    title_de = TitleLanguagePair(language='de', text=u'LMU ZUV-Intranet')
+    lmu_settings.breadcrumb_1_title = [title_de]
