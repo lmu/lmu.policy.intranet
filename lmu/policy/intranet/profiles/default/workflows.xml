@@ -4,5 +4,11 @@
   <default>
    <bound-workflow workflow_id="intranet_workflow"/>
   </default>
+  <type type_id="File">
+   <bound-workflow workflow_id="intranet_workflow"/>
+  </type>
+  <type type_id="Image">
+   <bound-workflow workflow_id="intranet_workflow"/>
+  </type>
  </bindings>
 </object>
