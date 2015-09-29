@@ -237,8 +237,6 @@ demo_pinnwand_entries = {
         'title': u'115pm Wohung in Schwabing',
         'text': u'<p>3-Zimmer Wohnung inmitten des lebhaften Kunst- und Pinakothekenviertels zu vermieten...</p>',
         'path': '/pinnwand',
-        'image': 'demo-content/wohung-schwabingen.jpg',
-        'image_caption': '',
         'author': '1AFCC515C117A98D@lmu.de',  # 'Simon.Kirner',
         'date': '2014/10/02 12:43:00.000000 GMT+2'
     },
@@ -247,8 +245,6 @@ demo_pinnwand_entries = {
         'title': u'Fahrgemeinschaft von Altdorf bei Landshut in die Leo3',
         'text': u'<p>Ich fahre regelmäßig Montag bis Donnerstag morgens nach München und mittags zurück. Wer hat die gleiche Strecke?</p>',
         'path': '/pinnwand',
-        'image': '',
-        'image_caption': '',
         'author': 'D3A7AFBDCBCDFAEF@lmu.de',  # 'Brady',
         'date': '2014/10/02 13:32:00.000000 GMT+2'
     },
@@ -257,8 +253,6 @@ demo_pinnwand_entries = {
         'title': u'Tolles Sofa!',
         'text': u'<p>Das Sofa muss raus. Jetzt für 150€ abzugeben.</p>',
         'path': '/pinnwand',
-        'image': 'demo-content/sofa.jpg',
-        'image_caption': '',
         'author': '1AFCC515C117A98D@lmu.de',  # 'Simon.Kirner',
         'date': '2014/10/02 14:27:00.000000 GMT+2'
     },
@@ -269,8 +263,6 @@ demo_pinnwand_entries = {
         <p>ich bin auf der Suche nach einem gut erhaltenen Damenfahrrad, möglichst 28 Zoll.
         Falls jemand einen Tipp hat oder noch ein gebrauchtes Rad im Keller stehen hat, würde ich mich über eine E-Mail sehr freuen!</p>''',
         'path': '/pinnwand',
-        'image': '',
-        'image_caption': '',
         'author': '5B4187806EA6E3B0@lmu.de',  # 'Katharine.Linges',
         'date': '2014/10/03 14:27:00.000000 GMT+2'
     },
@@ -288,6 +280,7 @@ demo_pinnwand_entries = {
 }
 
 demo_files_images = {
+    # Blog Files and Images
     'wald.jpg': {
         'title': u'Der alte Südfriedhof',
         'description': u'Der alte Südfriedhof',
@@ -307,7 +300,7 @@ demo_files_images = {
     'uni-lund.jpg': {
         'title': u'Universität Lund',
         'description': u'Universität Lund',
-        'src': 'demo-content/lunds-universitets-huvudbyggnad.jpg',
+        'src': 'demo-content/blog/organisationsentwicklung-an-der-universitaet-lund/lunds-universitets-huvudbyggnad.jpg',
         'target': '/blog-mit/organisationsentwicklung-an-der-universitaet-lund',
         'type': 'Image',
         'author': 'D3A7AFBDCBCDFAEF@lmu.de',  # 'Brady',
@@ -336,19 +329,28 @@ demo_files_images = {
         'type': 'Image',
         'author': 'AEA7ED2EEFDD4E7A@lmu.de',  # 'Elmar Thalhammer'
     },
-    'aktionstag-gesundheit-006.jpg': {
+    'aktionstag-gesundheit.jpg': {
         'title': u'Verloren und gewonnen am Aktionstag Gesundheit',
         'description': u'Verloren und gewonnen am Aktionstag Gesundheit',
-        'src': 'demo-content/blog/verloren-und-gewonnen/aktionstag-gesundheit-006.jpg',
+        'src': 'demo-content/blog/verloren-und-gewonnen/aktionstag-gesundheit.jpg',
         'target': 'blog-mit/verloren-und-gewonnen-am-aktionstag-gesundheit',
         'type': 'Image',
         'author': 'D1D7CEAFBBABCDAC@lmu.de',  # Jan Ingenhaag
     },
+    # Pinnwand Files and Images
     'rollcontainer.jpg': {
         'title': u'Rollcontainer',
         'description': u'Rollcontainer',
-        'src': 'demo-content/Rollcontainer.jpg',
-        'target': '/pinnwand',
+        'src': 'demo-content/pinnwand/rollcontainer-gebraucht-aber-gut-in-schuss/rollcontainer.jpg',
+        'target': '/pinnwand/rollcontainer-gebraucht-aber-gut-in-schuss',
+        'type': 'Image',
+        'author': '72C918A84D785B9F@lmu.de',  # 'Katrin.Groeschel',
+    },
+    'sofa.jpg': {
+        'title': u'Sofa',
+        'description': u'Tolles Sofa',
+        'src': 'demo-content/pinnwand/tolles-sofa/sofa.jpg',
+        'target': '/pinnwand/tolles-sofa/rollcontainer-gebraucht-aber-gut-in-schuss',
         'type': 'Image',
         'author': '72C918A84D785B9F@lmu.de',  # 'Katrin.Groeschel',
     },

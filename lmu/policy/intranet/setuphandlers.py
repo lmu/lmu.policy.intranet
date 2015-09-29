@@ -161,7 +161,7 @@ def _setupDemoPolls(context):
             )
             if api.content.get_state(obj=entry) != oval['state']:
                 api.content.transition(obj=entry, to_state=oval['state'])
-            entry.modification_date = DateTime(oval['date'])
+            entry.effective = DateTime(oval['date'])
         except BadRequest as e:
             print(e.message)
         except Exception as e:
@@ -187,7 +187,7 @@ def _setupDemoPinnwandEntries(context):
             )
             if api.content.get_state(obj=entry) != 'internally_published':
                 api.content.transition(obj=entry, to_state='internally_published')
-            entry.modification_date = DateTime(oval['date'])
+            entry.effective = DateTime(oval['date'])
         except BadRequest as e:
             print(e.message)
         except Exception as e:
@@ -223,9 +223,9 @@ def _setupDemoFilesAndImages(context):
                     image=NamedBlobImage(data=item_file.read()),
                     creators=(oval['author'],),
                 )
-            if api.content.get_state(obj=entry) != 'internally_published':
-                api.content.transition(obj=entry, to_state='internally_published')
-            entry.modification_date = DateTime(oval['modification_date'])
+            #if api.content.get_state(obj=entry) != 'internally_published':
+            #    api.content.transition(obj=entry, to_state='internally_published')
+            entry.effective = entry.modification_date
         except BadRequest as e:
             print(e.message)
         except Exception as e:
