@@ -284,7 +284,7 @@ demo_files_images = {
     'wald.jpg': {
         'title': u'Der alte Südfriedhof',
         'description': u'Der alte Südfriedhof',
-        'src': 'demo_content/blog/erholung-garantiert/wald.jpg',
+        'src': 'demo-content/blog/erholung-garantiert/wald.jpg',
         'target': '/blog-mit/erholung-garantiert',
         'type': 'Image',
         'author': '3624AAC8BBF0A28E@lmu.de',  # 'Seyhan Karabulut'

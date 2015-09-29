@@ -199,10 +199,19 @@ def _setupDemoFilesAndImages(context):
     for oid, oval in demo_files_images.iteritems():
         try:
             container = api.content.get(path=oval['target'])
+            if container is None:
+                s_path = oval['target'].split('/')
+                p_path = '/' + '/'.join(s_path[:-1])
+                elem = s_path[-1:][0]
+                container = api.content.get(path=p_path)
+                if elem in container.keys():
+                    container = container.get(elem)
+                else:
+                    continue
             if oid in container:
                 continue
             if oval['type'] == 'File:':
-                item_file = context.openDataFile(os.path.dirname(__file__) + '/' + oval['src'], 'files') if oval['src'] else None
+                item_file = context.openDataFile(os.path.dirname(__file__) + '/' + oval['src'])
                 entry = api.content.create(
                     id=oid,
                     type=oval['type'],
@@ -213,7 +222,7 @@ def _setupDemoFilesAndImages(context):
                     creators=(oval['author'],),
                 )
             elif oval['type'] == 'Image':
-                item_file = context.openDataFile(os.path.dirname(__file__) + '/' + oval['src'], 'images') if oval['src'] else None
+                item_file = context.openDataFile(os.path.dirname(__file__) + '/' + oval['src'])
                 entry = api.content.create(
                     id=oid,
                     type=oval['type'],
@@ -228,8 +237,10 @@ def _setupDemoFilesAndImages(context):
             entry.effective = entry.modification_date
         except BadRequest as e:
             print(e.message)
+        except IOError as e:
+            print(e.message + ' File not found: ' + oval['src'])
         except Exception as e:
-            print(e.message)
+            print('Error on %s: %s' % (oval, e.message))
             #import ipdb; ipdb.set_trace()
 
 
