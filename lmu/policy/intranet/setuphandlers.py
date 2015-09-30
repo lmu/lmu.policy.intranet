@@ -81,11 +81,25 @@ def _setupBaseContent(context):
                 folder.title = oval['title']
                 folder.description = oval['description']
                 folder.text = RichTextValue(oval['text'], 'text/html', 'text/html')
-            api.content.transition(obj=folder, to_state='published')
+            api.content.transition(obj=folder, to_state='internally_published')
         except BadRequest as e:
             print(e.message)
         except Exception as e:
             print(e.message)
+
+    portal = api.portal.get()
+    if 'index_html' not in portal.keys():
+        index_html = api.content.create(
+            id='index_html',
+            title=u'Verweis auf die Fiona Startseite',
+            description=u'Der Verweis ist notwendig, da Plone auf / bindet aber Fiona die /index.html ausliefern soll, die die Startseite des Portals ist.',
+            url='${navigation_root}/index.html'
+        )
+        api.content.transition(obj=index_html, to_state='internally_published')
+
+    if 'front_page' in portal.keys():
+        fp = portal.get('front_page')
+        api.content.delete(obj=fp, check_linkintegrity=False)
 
 
 def importDemoContent(context):
