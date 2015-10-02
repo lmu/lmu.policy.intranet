@@ -93,7 +93,9 @@ def _setupBaseContent(context):
             id='index_html',
             title=u'Verweis auf die Fiona Startseite',
             description=u'Der Verweis ist notwendig, da Plone auf / bindet aber Fiona die /index.html ausliefern soll, die die Startseite des Portals ist.',
-            url='${navigation_root}/index.html'
+            url='${navigation_root}/index.html',
+            container=portal,
+            type='Link',
         )
         api.content.transition(obj=index_html, to_state='internally_published')
 
