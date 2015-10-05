@@ -55,7 +55,7 @@ base_content = {
             <li>Links zu illegalen Downloads enthalten.</li>
         </ul>
 <p>Beiträge, die Kolleginnen oder Kollegen aufgrund ihres Geschlechts, ihres Alters, ihrer Sprache, ihrer Abstammung, ihrer Religion, ihrer Weltanschauung, einer Behinderung oder ihrer sexuellen Orientierung diskriminieren oder diffamieren, werden gelöscht. Denken Sie daran, dass Sie es mit Menschen und nicht mit virtuellen Persönlichkeiten zu tun haben.</p>
-<p>Sollten Sie Fragen zum Mitarbeiter-Blog oder den Blog-Regeln haben, können Sie sich jederzeit an uns unter blog-redaktion@intern.lmu.de wenden.</p>
+<p>Sollten Sie Fragen zum Mitarbeiter-Blog oder den Blog-Regeln haben, können Sie sich jederzeit an uns unter <a href="mailto:zuv-intranet@lmu.de" >zuv-intranet@lmu.de</a> wenden.</p>
 <p><strong>Viel Spaß beim Bloggen!<br />
 Ihre Intranet-Redaktion</strong></p>
 """,
