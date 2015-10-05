@@ -7,7 +7,7 @@ demo_users = {
         'properties': {
             'fullname': 'Alexander Loechel',
             'location': 'Martiusstr. 4; München',
-            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/l/loechel_alexander/index.html',
+            'homepage': '',
         },
         'roles': ('Member', 'Site Administrator', 'cms-admins', 'in_sp_supportteam', 'in_members')
     },
@@ -16,7 +16,7 @@ demo_users = {
         'password': 'Test@IUK',
         'properties': {
             'fullname': 'Katharine Linges',
-            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/l/linges_katharine/index.html',
+            'homepage': '',
         },
         'roles': ('Member', 'in_sp_supportteam', 'in_members')
     },
@@ -25,7 +25,7 @@ demo_users = {
         'password': 'Test@IUK',
         'properties': {
             'fullname': 'Katrin Gröschel',
-            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/g/groeschel_katrin/index.html',
+            'homepage': '',
         },
         'roles': ('Member', 'in_sp_supportteam', 'in_members')
     },
@@ -34,7 +34,7 @@ demo_users = {
         'password': 'Test@IUK',
         'properties': {
             'fullname': 'Christoph Zehetleitner',
-            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/z/zehetleitner_christoph/index.html',
+            'homepage': '',
         },
         'roles': ('Member', 'in_sp_supportteam', 'in_members')
     },
@@ -43,7 +43,7 @@ demo_users = {
         'password': 'Test@IUK',
         'properties': {
             'fullname': 'Stephanie Brady',
-            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/b/brady_stephanie/index.html',
+            'homepage': '',
         },
         'roles': ('Member', 'in_members')
     },
@@ -52,7 +52,7 @@ demo_users = {
         'password': 'Test@IUK',
         'properties': {
             'fullname': 'Simon Kirner',
-            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/k/kirner_simon/index.html',
+            'homepage': '',
         },
         'roles': ('Member', 'in_members')
     },
@@ -61,7 +61,7 @@ demo_users = {
         'password': 'Test@IUK',
         'properties': {
             'fullname': 'Seyhan Karabulut',
-            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/k/karabulut_seyhan/index.html',
+            'homepage': '',
         },
         'roles': ('Member', 'in_members')
     },
@@ -70,7 +70,7 @@ demo_users = {
         'password': 'Test@IUK',
         'properties': {
             'fullname': 'Elmar Thalhammer',
-            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/t/thalhammer_elmar/index.html',
+            'homepage': '',
         },
         'roles': ('Member', 'in_members')
     },
@@ -79,7 +79,7 @@ demo_users = {
         'password': 'Test@IUK',
         'properties': {
             'fullname': 'Jan Ingenhaag',
-            'homepage': 'https://iukintest.verwaltung.uni-muenchen.de/personen/i/ingenhaag_jan/index.html',
+            'homepage': '',
         },
         'roles': ('Member', 'in_members')
     }
