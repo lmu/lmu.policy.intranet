@@ -120,7 +120,7 @@ def _setupBreadcrumbs(context):
     lmu_settings.breadcrumb_1_url = url
     title_de = TitleLanguagePair(language='de', text=u'LMU ZUV-Intranet')
     lmu_settings.breadcrumb_1_title = [title_de]
-    lmu_settings.domain = 'www.intranet.verwaltung.uni-muenchen.de'
+    lmu_settings.domain = ['www.intranet.verwaltung.uni-muenchen.de']
 
 
 def importDemoContent(context):
