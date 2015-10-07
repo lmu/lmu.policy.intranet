@@ -16,6 +16,7 @@ from plone.registry.interfaces import IRegistry
 from zope.component import getUtility
 
 from zExceptions import BadRequest
+from Products.AutoRoleFromHostHeader.plugins.AutoRole import AutoRole
 
 from lmu.policy.base.controlpanel import ILMUSettings
 from lmu.policy.base.controlpanel import TitleLanguagePair
@@ -38,6 +39,7 @@ def setupVarious(context):
         return
 
     _setupGroups(context)
+    _setupAutoRoleHeader(context)
     _setupBaseContent(context)
     _setupBreadcrumbs(context)
 
@@ -63,6 +65,27 @@ def _setupGroups(context):
             )
 
 
+def _setupAutoRoleHeader(context):
+    acl_users = api.portal.get_tool('acl_users')
+
+    #import ipdb; ipdb.set_trace()
+
+    arh = AutoRole('auto_role_header_members',
+                   title='AutoRole for ZUV-Intranet-Members',
+                   match_roles=('Groupmembership; ^(.*?(\bcn=ZUV-Intranet-Members,ou=Mitarbeiter,ou=LMU-Portal,ou=anwendungen,o=uni-muenchen,c=de\b)[^$]*)$; ZUV-Intranet-Members; python:True'))
+    acl_users['auto_role_header_members'] = arh
+
+    arh_blog = AutoRole('auto_role_header_blog',
+                        title='AutoRole for ZUV-Intranet-Blog',
+                        match_roles=('Groupmembership; ^(.*?(\bcn=ZUV-Intranet-Members,ou=Mitarbeiter,ou=LMU-Portal,ou=anwendungen,o=uni-muenchen,c=de\b)[^$]*)$; ZUV-Intranet-Blog; python:True'))
+    acl_users['auto_role_header_blog'] = arh_blog
+
+    arh_pinnwand = AutoRole('auto_role_header_pinnwand',
+                            title='AutoRole for ZUV-Intranet-Pinnwand',
+                            match_roles=('Groupmembership; ^(.*?(\bcn=ZUV-Intranet-Pinnwand,ou=Mitarbeiter,ou=LMU-Portal,ou=anwendungen,o=uni-muenchen,c=de\b)[^$]*)$; ZUV-Intranet-Pinnwand; python:True'))
+    acl_users['auto_role_header_pinnwand'] = arh_pinnwand
+
+
 def _setupBaseContent(context):
     for oid, oval in base_content.iteritems():
         try:
@@ -86,6 +109,18 @@ def _setupBaseContent(context):
             print(e.message)
         except Exception as e:
             print(e.message)
+
+
+def _setupBreadcrumbs(context):
+    registry = getUtility(IRegistry)
+    lmu_settings = registry.forInterface(ILMUSettings)
+    portal = context.getSite()
+    root = portal.unrestrictedTraverse(getNavigationRoot(portal)).absolute_url()
+    url = safe_unicode(root) + u'/index.html'
+    lmu_settings.breadcrumb_1_url = url
+    title_de = TitleLanguagePair(language='de', text=u'LMU ZUV-Intranet')
+    lmu_settings.breadcrumb_1_title = [title_de]
+    lmu_settings.domain = 'www.intranet.verwaltung.uni-muenchen.de'
 
 
 def importDemoContent(context):
@@ -138,7 +173,7 @@ def _setupDemoBlogEntries(context):
             )
             if api.content.get_state(obj=entry) != 'internally_published':
                 api.content.transition(obj=entry, to_state='internally_published')
-            entry.modification_date = DateTime(oval['date'])
+            entry.effective = DateTime(oval['date'])
         except BadRequest as e:
             print(e.message)
         except Exception as e:
@@ -242,14 +277,3 @@ def _setupDemoFilesAndImages(context):
         except Exception as e:
             print('Error on %s: %s' % (oval, e.message))
             #import ipdb; ipdb.set_trace()
-
-
-def _setupBreadcrumbs(context):
-    registry = getUtility(IRegistry)
-    lmu_settings = registry.forInterface(ILMUSettings)
-    portal = context.getSite()
-    root = portal.unrestrictedTraverse(getNavigationRoot(portal)).absolute_url()
-    url = safe_unicode(root) + u'/index.html'
-    lmu_settings.breadcrumb_1_url = url
-    title_de = TitleLanguagePair(language='de', text=u'LMU ZUV-Intranet')
-    lmu_settings.breadcrumb_1_title = [title_de]

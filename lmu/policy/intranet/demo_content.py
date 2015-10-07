@@ -9,7 +9,7 @@ demo_users = {
             'location': 'Martiusstr. 4; München',
             'homepage': '',
         },
-        'roles': ('Member', 'Site Administrator', 'cms-admins', 'in_sp_supportteam', 'in_members')
+        'roles': ('Member', 'Manager', 'Site Administrator', 'cms-admins-insp', 'in_sp_supportteam')
     },
     '5B4187806EA6E3B0': {  # Katharine Linges
         'email': 'demo@lmu.de',
@@ -18,7 +18,7 @@ demo_users = {
             'fullname': 'Katharine Linges',
             'homepage': '',
         },
-        'roles': ('Member', 'in_sp_supportteam', 'in_members')
+        'roles': ('Member', 'in_sp_supportteam')
     },
     '5B9282DB46605F33': {  # Katrin Gröschel
         'email': 'demo@lmu.de',
@@ -27,7 +27,7 @@ demo_users = {
             'fullname': 'Katrin Gröschel',
             'homepage': '',
         },
-        'roles': ('Member', 'in_sp_supportteam', 'in_members')
+        'roles': ('Member', 'in_sp_supportteam')
     },
     '3ABBA66EEABFBA4A': {  # Christoph Zehetleitner
         'email': 'demo@lmu.de',
@@ -36,7 +36,7 @@ demo_users = {
             'fullname': 'Christoph Zehetleitner',
             'homepage': '',
         },
-        'roles': ('Member', 'in_sp_supportteam', 'in_members')
+        'roles': ('Member', 'in_sp_supportteam')
     },
     'D3A7AFBDCBCDFAEF': {  # Stephanie Brady
         'email': 'demo@lmu.de',
@@ -45,7 +45,7 @@ demo_users = {
             'fullname': 'Stephanie Brady',
             'homepage': '',
         },
-        'roles': ('Member', 'in_members')
+        'roles': ('Member')
     },
     '1AFCC515C117A98D': {  # Simon.Kirner
         'email': 'demo@lmu.de',
@@ -54,7 +54,7 @@ demo_users = {
             'fullname': 'Simon Kirner',
             'homepage': '',
         },
-        'roles': ('Member', 'in_members')
+        'roles': ('Member')
     },
     '3624AAC8BBF0A28E': {  # Seyhan Karabulut
         'email': 'demo@lmu.de',
@@ -63,7 +63,7 @@ demo_users = {
             'fullname': 'Seyhan Karabulut',
             'homepage': '',
         },
-        'roles': ('Member', 'in_members')
+        'roles': ('Member')
     },
     'AEA7ED2EEFDD4E7A': {  # Elmar Thalhammer
         'email': 'demo@lmu.de',
@@ -72,7 +72,7 @@ demo_users = {
             'fullname': 'Elmar Thalhammer',
             'homepage': '',
         },
-        'roles': ('Member', 'in_members')
+        'roles': ('Member')
     },
     'D1D7CEAFBBABCDAC': {  # Jan Ingenhaag
         'email': 'demo@lmu.de',
@@ -81,52 +81,52 @@ demo_users = {
             'fullname': 'Jan Ingenhaag',
             'homepage': '',
         },
-        'roles': ('Member', 'in_members')
+        'roles': ('Member')
     }
 }
 
 
 demo_blog_entries = {
-    'verloren-und-gewonnen-am-aktionstag-gesundheit': {
-        'title': u'Verloren und gewonnen am Aktionstag Gesundheit',
-        'description': '',
-        'text': u"""<p>Leider hat es für mein Team nicht für einen Sieg im Riesenkicker gereicht – dennoch war aus meiner Sicht der Aktionstag Gesundheit ein voller Erfolg:
-        Am Ende waren alle Gewinner.</p>
-        <p>Ich muss gestehen, dass ich mich nicht ohne Skepsis zum Aktionstag Gesundheit angemeldet habe.
-        Skeptisch insofern, weil als Ziel des Aktionstages die Stärkung der Gemeinschaft unter Kolleginnen und Kolleginnen angegeben war.
-        Ein recht hohes Ziel für einen Tag voller auf den ersten Blick skurril anmutender Spiele wie Riesenkicker oder Wischmopphockey.
-        Ich habe allerdings unterschätzt, welch positive Wirkung es haben kann, mit Kollegen an eine Stange „gefesselt“ zu sein.
-        Vor allem das menschliche Riesenkicker als Highlight des Tages war Anstifter zu guten Gesprächen und vor allem viel gemeinsamen Lachens.
-        Am Rande sei erwähnt, dass der Ehrgeiz dann doch den ein oder anderen auf spielerische Weise gepackt hat.
-        Tja, dummerweise hat es am Ende für mein Team „Walter Frosch Gedächtnisgruppe“ nicht für den Pokal gereicht – wir mussten uns knapp geschlagen geben, trotz größerer Spielanteile.</p>
-        <p>Aber sei es dem Team „Internationale Härte“ gegönnt, den Pokal zu haben.
-        Vielleicht gibt es ja irgendwann wieder einen Aktionstag Gesundheit und ein Rückspiel.
-        Denn gewonnen oder nicht, ich hatte den Eindruck, dass am Ende jeder jeden ein wenig mehr kannte und schätzte.
-        So dass am Ende des Tages alle als Gewinner einer – wie eben anfangs erwähnt – Gemeinschaft waren.</p>
-        <p>Ich freue mich auf nächstes Jahr und werde wieder am Start sein.</p>""",
-        'path': '/blog-mit',
-        'author': '1AFCC515C117A98D',  # 'Simon.Kirner',
-        'date': '2014/10/02 16:09:00.000000 GMT+2'
-    },
-    'wer-hat-erfahrungen-mit-online-anwendungen-fuer-die-reisekosten-administration': {
-        'title': u'Wer hat Erfahrungen mit Online-Anwendungen für die Reisekosten-Administration?',
-        'description': '',
-        'text': u"""<p>Ich leite ein Projekt zur Optimierung des Geschäftsprozesses von Reisekosten und arbeite derzeit an einem Konzept zur Digitalisierung von deren Beantragung.
-        Hat jemand Erfahrungen mit Online-Buchungs-Tools und kann diese einbringen?</p>""",
-        'path': '/blog-mit',
-        'author': 'D3A7AFBDCBCDFAEF',  # 'Brady',
-        'date': '2014/10/02 15:32:00.000000 GMT+2'
-    },
-    'organisationsentwicklung-an-der-universitaet-lund': {
-        'title': u'Organisationsentwicklung an der Universität Lund',
-        'description': '',
-        'text': u"""<p>Im Rahmen eines Mitarbeiteraustauschs war ich letzte Woche an der LERU-Uni in Lund / Schweden.
-        Es ist sehr erhellend, wie dort die Verwaltung aufgebaut ist und wie sie derzeit ihre Administration optimieren.
-        Einige Maßnahmen sind ähnlich wie in ZUV 2015…</p>""",
-        'path': '/blog-mit',
-        'author': 'D3A7AFBDCBCDFAEF',  # 'Brady',
-        'date': '2014/10/02 13:09:00.000000 GMT+2'
-    },
+    # 'verloren-und-gewonnen-am-aktionstag-gesundheit': {
+    #     'title': u'Verloren und gewonnen am Aktionstag Gesundheit',
+    #     'description': '',
+    #     'text': u"""<p>Leider hat es für mein Team nicht für einen Sieg im Riesenkicker gereicht – dennoch war aus meiner Sicht der Aktionstag Gesundheit ein voller Erfolg:
+    #     Am Ende waren alle Gewinner.</p>
+    #     <p>Ich muss gestehen, dass ich mich nicht ohne Skepsis zum Aktionstag Gesundheit angemeldet habe.
+    #     Skeptisch insofern, weil als Ziel des Aktionstages die Stärkung der Gemeinschaft unter Kolleginnen und Kolleginnen angegeben war.
+    #     Ein recht hohes Ziel für einen Tag voller auf den ersten Blick skurril anmutender Spiele wie Riesenkicker oder Wischmopphockey.
+    #     Ich habe allerdings unterschätzt, welch positive Wirkung es haben kann, mit Kollegen an eine Stange „gefesselt“ zu sein.
+    #     Vor allem das menschliche Riesenkicker als Highlight des Tages war Anstifter zu guten Gesprächen und vor allem viel gemeinsamen Lachens.
+    #     Am Rande sei erwähnt, dass der Ehrgeiz dann doch den ein oder anderen auf spielerische Weise gepackt hat.
+    #     Tja, dummerweise hat es am Ende für mein Team „Walter Frosch Gedächtnisgruppe“ nicht für den Pokal gereicht – wir mussten uns knapp geschlagen geben, trotz größerer Spielanteile.</p>
+    #     <p>Aber sei es dem Team „Internationale Härte“ gegönnt, den Pokal zu haben.
+    #     Vielleicht gibt es ja irgendwann wieder einen Aktionstag Gesundheit und ein Rückspiel.
+    #     Denn gewonnen oder nicht, ich hatte den Eindruck, dass am Ende jeder jeden ein wenig mehr kannte und schätzte.
+    #     So dass am Ende des Tages alle als Gewinner einer – wie eben anfangs erwähnt – Gemeinschaft waren.</p>
+    #     <p>Ich freue mich auf nächstes Jahr und werde wieder am Start sein.</p>""",
+    #     'path': '/blog-mit',
+    #     'author': '1AFCC515C117A98D',  # 'Simon.Kirner',
+    #     'date': '2014/10/02 16:09:00.000000 GMT+2'
+    # },
+    # 'wer-hat-erfahrungen-mit-online-anwendungen-fuer-die-reisekosten-administration': {
+    #     'title': u'Wer hat Erfahrungen mit Online-Anwendungen für die Reisekosten-Administration?',
+    #     'description': '',
+    #     'text': u"""<p>Ich leite ein Projekt zur Optimierung des Geschäftsprozesses von Reisekosten und arbeite derzeit an einem Konzept zur Digitalisierung von deren Beantragung.
+    #     Hat jemand Erfahrungen mit Online-Buchungs-Tools und kann diese einbringen?</p>""",
+    #     'path': '/blog-mit',
+    #     'author': 'D3A7AFBDCBCDFAEF',  # 'Brady',
+    #     'date': '2014/10/02 15:32:00.000000 GMT+2'
+    # },
+    # 'organisationsentwicklung-an-der-universitaet-lund': {
+    #     'title': u'Organisationsentwicklung an der Universität Lund',
+    #     'description': '',
+    #     'text': u"""<p>Im Rahmen eines Mitarbeiteraustauschs war ich letzte Woche an der LERU-Uni in Lund / Schweden.
+    #     Es ist sehr erhellend, wie dort die Verwaltung aufgebaut ist und wie sie derzeit ihre Administration optimieren.
+    #     Einige Maßnahmen sind ähnlich wie in ZUV 2015…</p>""",
+    #     'path': '/blog-mit',
+    #     'author': 'D3A7AFBDCBCDFAEF',  # 'Brady',
+    #     'date': '2014/10/02 13:09:00.000000 GMT+2'
+    # },
     'mitreden-bei-blog-mit': {
         'title': u'Mitreden bei "Blog Mit!',
         'description': '',
@@ -142,7 +142,7 @@ demo_blog_entries = {
         Darüber hinaus haben wir  einige Regeln und Tipps zusammengestellt, die den Umgang mit dem Mitarbeiter-Blog erleichtern. </p>
         <p>Wir freuen uns auf Ihre Beiträge und Kommentare!</p>""",
         'path': '/blog-mit',
-        'author': '72C918A84D785B9F',  # 'Linges',
+        'author': '5B4187806EA6E3B0',  # 'Linges',
         'date': '2014/10/02 13:09:00.000000 GMT+2'
     },
     'mitarbeiterfotos-im-zuv-intranet': {
@@ -189,7 +189,7 @@ demo_blog_entries = {
         'text': u"""<p>Morgen geht's los- die LMU läuft wieder beim B2Run! Das T-Shirt: Ich würde mal sagen: GRÜN! Wer ist noch dabei?</p>""",
         'path': '/blog-mit',
         'author': '5B9282DB46605F33',  # "Katrin Gröschel'
-        'date': '2015/09/10 13:29:00.000000 GMT+2'
+        'date': '2015/07/10 13:29:00.000000 GMT+2'
     },
 }
 
@@ -211,18 +211,17 @@ demo_polls = {
         'title': 'Und sie bewegt sich doch, die ZUV.',
         'description': '',
         'author': '5B4187806EA6E3B0',  # 'Katharine.Linges',
-        'date': '2014/10/02 12:43:00.000000 GMT+2',
         'state': 'open',
     },
-    'wie-gut-hilft-ihnen-unser-service-portal-bei-der-arbeit': {
-        'poll_type': 'Star Poll',
-        'path': '/umfragen',
-        'title': 'Wie gut hilft Ihnen unser Service-Portal bei der Arbeit?',
-        'description': 'Seien Sie ehrlich, nur so können wir besser werden.',
-        'author': '5B4187806EA6E3B0',  # 'Katharine.Linges',
-        'date': '2014/10/02 12:43:00.000000 GMT+2',
-        'state': 'open',
-    }
+#    'wie-gut-hilft-ihnen-unser-service-portal-bei-der-arbeit': {
+#        'poll_type': 'Star Poll',
+#        'path': '/umfragen',
+#        'title': 'Wie gut hilft Ihnen unser Service-Portal bei der Arbeit?',
+#        'description': 'Seien Sie ehrlich, nur so können wir besser werden.',
+#        'author': '5B4187806EA6E3B0',  # 'Katharine.Linges',
+#        'date': '2014/10/02 12:43:00.000000 GMT+2',
+#        'state': 'open',
+#    }
 }
 
 demo_pinnwand_entries = {

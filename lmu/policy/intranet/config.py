@@ -1,20 +1,20 @@
 # -*- coding: utf-8 -*-
 
 required_groups = {
-    'cms-admins': {
-        'roles': ['Manager'],
-        'title': 'CMS Admins (Virtual Group)',
-        'description': 'Virtual Group for Administrators derifed from Shibboleth via "cn=cms-admin-insp,ou=..."'
-    },
-    'in_sp_supportteam': {
-        'roles': ['Contributor', 'Editor', 'Reader', 'Reviewer'],
-        'title': 'Intranet Supportteam (Virtual Group)',
-        'description': 'Virtual Group for the Intranet-Supportteam derifed from Shibboleth via "cn=in_sp_supportteam,ou=..."'
-    },
-    'in_members': {
+    'ZUV-Intranet-Members': {
         'roles': ['Member'],
-        'title': 'ZUV-Intranet Users (Virtual Group)',
-        'description': 'Virtual Group for Users of the ZUV-Intranet derifed from Shibboleth via "cn=ZUV-Mitarbeiter,ou=..."'
+        'title': 'ZUV-Intranet-Members (Virtual Group)',
+        'description': 'Virtual Group for Users of the ZUV-Intranet comming from Shibboleth via "cn=ZUV-Intranet-Members,ou=..."'
+    },
+    'ZUV-Intranet-Blog': {
+        'roles': ['Member'],
+        'title': 'ZUV-Intranet-Members (Virtual Group)',
+        'description': 'Virtual Group for Users of the ZUV-Intranet comming from Shibboleth via "cn=ZUV-Intranet-Members,ou=..."'
+    },
+    'ZUV-Intranet-Pinnwand': {
+        'roles': ['Member'],
+        'title': 'ZUV-Intranet-Members (Virtual Group)',
+        'description': 'Virtual Group for Users of the ZUV-Intranet comming from Shibboleth via "cn=ZUV-Intranet-Members,ou=..."'
     }
 }
 
