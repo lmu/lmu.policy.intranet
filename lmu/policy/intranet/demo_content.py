@@ -143,7 +143,7 @@ demo_blog_entries = {
         <p>Wir freuen uns auf Ihre Beiträge und Kommentare!</p>""",
         'path': '/blog-mit',
         'author': '5B4187806EA6E3B0',  # 'Linges',
-        'date': '2014/10/02 13:09:00.000000 GMT+2'
+        'date': '2015/10/08 13:09:00.000000 GMT+2'
     },
     'mitarbeiterfotos-im-zuv-intranet': {
         'title': u'Mitarbeiterfotos im ZUV-Intranet',
@@ -155,7 +155,7 @@ demo_blog_entries = {
         Wenn man dann noch neben einem freundlichen "Guten Tag Herr Müller" im richtigen Moment ein zusätzliches "Ach übrigens, alles Gute zum Geburtstag" anbringen kann, dann steht einer engeren Vernetzung der einzelnen ZUV-Mitarbeiter nichts mehr im Weg.</p>""",
         'path': '/blog-mit',
         'author': '3ABBA66EEABFBA4A',  # 'Christoph Zehetleitner',
-        'date': '2015/19/16 16:10:00.000000 GMT+2'
+        'date': '2015/10/06 16:10:00.000000 GMT+2'
     },
     'erholung-garantiert': {
         'title': u'Erholung garantiert',
@@ -181,7 +181,7 @@ demo_blog_entries = {
          Ich könnte mir vorstellen, dass dieses Angebot auch für andere Kolleginnen und Kollegen interessant ist, die es auch mal in die "Randgebiete" der LMU verschlägt.</p>""",
         'path': '/blog-mit',
         'author': 'AEA7ED2EEFDD4E7A',  # 'Elmar Thalhammer'
-        'date': '2015/09/15 07:37:00.000000 GMT+2'
+        'date': '2015/09/13 07:37:00.000000 GMT+2'
     },
     'b2run-morgen-gehts-los': {
         'title': u"B2Run - Morgen geht's los",
@@ -225,30 +225,30 @@ demo_polls = {
 }
 
 demo_pinnwand_entries = {
-    '115qm-wohnung-in-schwabing': {
-        'category': 'Biete',
-        'title': u'115pm Wohung in Schwabing',
-        'text': u'<p>3-Zimmer Wohnung inmitten des lebhaften Kunst- und Pinakothekenviertels zu vermieten...</p>',
-        'path': '/pinnwand',
-        'author': '1AFCC515C117A98D',  # 'Simon.Kirner',
-        'date': '2014/10/02 12:43:00.000000 GMT+2'
-    },
-    'fahrgemeinschaft-von-altdorf-bei-landshut-in-die-leo3': {
-        'category': 'Suche',
-        'title': u'Fahrgemeinschaft von Altdorf bei Landshut in die Leo3',
-        'text': u'<p>Ich fahre regelmäßig Montag bis Donnerstag morgens nach München und mittags zurück. Wer hat die gleiche Strecke?</p>',
-        'path': '/pinnwand',
-        'author': 'D3A7AFBDCBCDFAEF',  # 'Brady',
-        'date': '2014/10/02 13:32:00.000000 GMT+2'
-    },
-    'tolles-sofa': {
-        'category': 'Biete',
-        'title': u'Tolles Sofa!',
-        'text': u'<p>Das Sofa muss raus. Jetzt für 150€ abzugeben.</p>',
-        'path': '/pinnwand',
-        'author': '1AFCC515C117A98D',  # 'Simon.Kirner',
-        'date': '2014/10/02 14:27:00.000000 GMT+2'
-    },
+    # '115qm-wohnung-in-schwabing': {
+    #     'category': 'Biete',
+    #     'title': u'115pm Wohung in Schwabing',
+    #     'text': u'<p>3-Zimmer Wohnung inmitten des lebhaften Kunst- und Pinakothekenviertels zu vermieten...</p>',
+    #     'path': '/pinnwand',
+    #     'author': '1AFCC515C117A98D',  # 'Simon.Kirner',
+    #     'date': '2014/10/02 12:43:00.000000 GMT+2'
+    # },
+    # 'fahrgemeinschaft-von-altdorf-bei-landshut-in-die-leo3': {
+    #     'category': 'Suche',
+    #     'title': u'Fahrgemeinschaft von Altdorf bei Landshut in die Leo3',
+    #     'text': u'<p>Ich fahre regelmäßig Montag bis Donnerstag morgens nach München und mittags zurück. Wer hat die gleiche Strecke?</p>',
+    #     'path': '/pinnwand',
+    #     'author': 'D3A7AFBDCBCDFAEF',  # 'Brady',
+    #     'date': '2014/10/02 13:32:00.000000 GMT+2'
+    # },
+    # 'tolles-sofa': {
+    #     'category': 'Biete',
+    #     'title': u'Tolles Sofa!',
+    #     'text': u'<p>Das Sofa muss raus. Jetzt für 150€ abzugeben.</p>',
+    #     'path': '/pinnwand',
+    #     'author': '1AFCC515C117A98D',  # 'Simon.Kirner',
+    #     'date': '2014/10/02 14:27:00.000000 GMT+2'
+    # },
     'damenfahrrad': {
         'category': 'Suche',
         'title': u'Damenfahrrad',
@@ -259,17 +259,28 @@ demo_pinnwand_entries = {
         'author': '5B4187806EA6E3B0',  # 'Katharine.Linges',
         'date': '2014/10/03 14:27:00.000000 GMT+2'
     },
-    'rollcontainer-gebraucht-aber-gut-in-schuss': {
+    'verschenke-das-buch-die-studentin': {
         'category': 'Biete',
-        'title': u'Rollcontainer - gebraucht, aber gut in Schuss',
+        'title': u'Verschenke das Buch "Die Studentin"',
         'description': '',
-        'text': u"""<p>Verkaufe einen Rollcontainer mit 3 Schubladen, oben hat er eine kleine Macke (siehe Foto).</p>
-        <p>Maße:<br />Tiefe: 41 cm<br />Höhe:57 cm<br />Breite: 41 cm</p>
-        <p>5 Euro VB</p>""",
+        'text': u"""<p>Ich verschenke hier das Buch "Die Studentin" von Christian Schünemann. In diesem Roman stört eine Leiche die Ruhe der Geisteswissenschaften - es ist mords was los an der Münchner Ludwig-Maximilians-Universität! Ein neuer Fall für Tomas Prinz, den Münchner Starfrisör und Detektiv wider Willen.</p>
+        <p>Das Buch kann gerne bei mir im Büro abgeholt werden - first come, first served.</p>
+        """,
         'path': '/pinnwand',
         'author': '72C918A84D785B9F',  # 'Katrin.Groeschel',
         'date': '2014/10/02 13:09:00.000000 GMT+2'
     },
+    # 'rollcontainer-gebraucht-aber-gut-in-schuss': {
+    #     'category': 'Biete',
+    #     'title': u'Rollcontainer - gebraucht, aber gut in Schuss',
+    #     'description': '',
+    #     'text': u"""<p>Verkaufe einen Rollcontainer mit 3 Schubladen, oben hat er eine kleine Macke (siehe Foto).</p>
+    #     <p>Maße:<br />Tiefe: 41 cm<br />Höhe:57 cm<br />Breite: 41 cm</p>
+    #     <p>5 Euro VB</p>""",
+    #     'path': '/pinnwand',
+    #     'author': '72C918A84D785B9F',  # 'Katrin.Groeschel',
+    #     'date': '2014/10/02 13:09:00.000000 GMT+2'
+    # },
 }
 
 demo_files_images = {
@@ -331,19 +342,35 @@ demo_files_images = {
         'author': 'D1D7CEAFBBABCDAC',  # Jan Ingenhaag
     },
     # Pinnwand Files and Images
-    'rollcontainer.jpg': {
-        'title': u'Rollcontainer',
-        'description': u'Rollcontainer',
-        'src': 'demo-content/pinnwand/rollcontainer-gebraucht-aber-gut-in-schuss/rollcontainer.jpg',
-        'target': '/pinnwand/rollcontainer-gebraucht-aber-gut-in-schuss',
+    # 'rollcontainer.jpg': {
+    #     'title': u'Rollcontainer',
+    #     'description': u'Rollcontainer',
+    #     'src': 'demo-content/pinnwand/rollcontainer-gebraucht-aber-gut-in-schuss/rollcontainer.jpg',
+    #     'target': '/pinnwand/rollcontainer-gebraucht-aber-gut-in-schuss',
+    #     'type': 'Image',
+    #     'author': '72C918A84D785B9F',  # 'Katrin.Groeschel',
+    # },
+    # 'sofa.jpg': {
+    #     'title': u'Sofa',
+    #     'description': u'Tolles Sofa',
+    #     'src': 'demo-content/pinnwand/tolles-sofa/sofa.jpg',
+    #     'target': '/pinnwand/tolles-sofa',
+    #     'type': 'Image',
+    #     'author': '72C918A84D785B9F',  # 'Katrin.Groeschel',
+    # },
+    'die-studentin-cover.jpg': {
+        'title': u'Die Studentin (Cover)',
+        'description': u'Die Studentin (Cover)',
+        'src': 'demo-content/pinnwand/verschenke-das-buch-die-studentin/die-studentin1.jpg',
+        'target': '/pinnwand/verschenke-das-buch-die-studentin',
         'type': 'Image',
         'author': '72C918A84D785B9F',  # 'Katrin.Groeschel',
     },
-    'sofa.jpg': {
-        'title': u'Sofa',
-        'description': u'Tolles Sofa',
-        'src': 'demo-content/pinnwand/tolles-sofa/sofa.jpg',
-        'target': '/pinnwand/tolles-sofa/rollcontainer-gebraucht-aber-gut-in-schuss',
+    'die-studentin-rueckseite.jpg': {
+        'title': u'Die Studentin (Rückseite)',
+        'description': u'Die Studentin (Rückseite)',
+        'src': 'demo-content/pinnwand/verschenke-das-buch-die-studentin/die-studentin2.jpg',
+        'target': '/pinnwand/verschenke-das-buch-die-studentin',
         'type': 'Image',
         'author': '72C918A84D785B9F',  # 'Katrin.Groeschel',
     },
