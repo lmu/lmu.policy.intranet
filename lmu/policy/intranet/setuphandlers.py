@@ -91,7 +91,7 @@ def _setupAutoRoleHeader(context):
 def _setupDeletePloneBaseContent(context):
     portal = api.portal.get()
     for item in portal.values():
-        if item in ['front-page', 'news', 'events', 'Members']:
+        if item.id in ['front-page', 'news', 'events', 'Members']:
             api.content.delete(obj=item)
     wf_tool = api.portal.get_tool('portal_workflow')
     wf_tool.updateRoleMappings()
