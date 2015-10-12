@@ -82,6 +82,15 @@ demo_users = {
             'homepage': '',
         },
         'roles': ('Member')
+    },
+    'E5A46A394DEFCBFE': {  # Jan Ingenhaag
+        'email': 'demo@lmu.de',
+        'password': 'Test@IUK',
+        'properties': {
+            'fullname': 'Willibald Seitz',
+            'homepage': '',
+        },
+        'roles': ('Member')
     }
 }
 
@@ -190,6 +199,14 @@ demo_blog_entries = {
         'path': '/blog-mit',
         'author': '5B9282DB46605F33',  # "Katrin Gröschel'
         'date': '2015/07/10 13:29:00.000000 GMT+2'
+    },
+    'login-zum-zuv-intranet-und-serviceportal': {
+        'title': u"Login zum ZUV-Intranet und Serviceportal",
+        'description': '',
+        'text': u"""<p>Vielen Dank an das Organisationsteam, dass der Login zum ZUV-Intranet und Serviceportal am ZUV-PC weitergegeben wird, ohne sich erneut für die Portale anmelden zu müssen.</p>""",
+        'path': '/blog-mit',
+        'author': 'E5A46A394DEFCBFE',  # "Willibald Seitz'
+        'date': '2015/10/08 13:52:00.000000 GMT+2'
     },
 }
 
