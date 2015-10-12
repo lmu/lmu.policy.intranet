@@ -3,26 +3,26 @@
 required_groups = {
     'ZUV-Intranet-Members': {
         'roles': ['Member'],
-        'title': 'ZUV-Intranet-Members (Virtual Group)',
-        'description': 'Virtual Group for Users of the ZUV-Intranet comming from Shibboleth via "cn=ZUV-Intranet-Members,ou=..."'
+        'title': u'ZUV-Intranet-Members (Virtual Group)',
+        'description': u'Virtual Group for Users of the ZUV-Intranet comming from Shibboleth via "cn=ZUV-Intranet-Members,ou=..."'
     },
     'ZUV-Intranet-Blog': {
         'roles': ['Member'],
-        'title': 'ZUV-Intranet-Members (Virtual Group)',
-        'description': 'Virtual Group for Users of the ZUV-Intranet comming from Shibboleth via "cn=ZUV-Intranet-Members,ou=..."'
+        'title': u'ZUV-Intranet-Blog (Virtual Group)',
+        'description': u'Virtual Group for Users of the ZUV-Intranet comming from Shibboleth via "cn=ZUV-Intranet-Blog,ou=..."'
     },
     'ZUV-Intranet-Pinnwand': {
         'roles': ['Member'],
-        'title': 'ZUV-Intranet-Members (Virtual Group)',
-        'description': 'Virtual Group for Users of the ZUV-Intranet comming from Shibboleth via "cn=ZUV-Intranet-Members,ou=..."'
+        'title': u'ZUV-Intranet-Pinnwand (Virtual Group)',
+        'description': u'Virtual Group for Users of the ZUV-Intranet comming from Shibboleth via "cn=ZUV-Intranet-Pinnwand,ou=..."'
     }
 }
 
 base_content = {
     'blog-mit': {
-        'title': 'Blog mit!',
-        'description': 'Mitarbeiten. Mitreden. Mitmachen.',
-        'text': """
+        'title': u'Blog mit!',
+        'description': u'Mitarbeiten. Mitreden. Mitmachen.',
+        'text': u"""
         <h2>Willkommen zum Mitarbeiter Blog der ZUV!</h2>
         <p>Ziel von Blog MIT, dem Mitarbeiter-Blog im ZUV-Intranet, ist der interne Austausch und die Vernetzung aller Mitarbeiterinnen und Mitarbeiter der ZUV über die Hierarchieebenen hinweg.
         Wir laden Sie herzlich ein, zu aktuellen Themen unserer täglichen Arbeit, zu Projekten, Prozessen, Fragestellungen und Dienstleistungen der ZUV Beiträge zu verfassen und zu kommentieren.
@@ -70,8 +70,8 @@ base_content = {
         }
     },
     'umfragen': {
-        'title': 'Umfragen',
-        'description': '',
+        'title': u'Umfragen',
+        'description': u'',
         'text': """
 
 """,
@@ -83,9 +83,9 @@ base_content = {
         }
     },
     'pinnwand': {
-        'title': 'Die ZUV Pinnwand',
-        'description': 'Tauschen. Helfen. Kaufen.',
-        'text': """
+        'title': u'Die ZUV Pinnwand',
+        'description': u'Tauschen. Helfen. Kaufen.',
+        'text': u"""
         <h2>Tipps und Tricks</h2>
         <ol>
         <li>Geben Sie Ihrer Anzeige eine aussagekräftige, konkrete Überschrift, damit diese besser gefunden wird und der Inhalt sofort erkennbar ist. </li>

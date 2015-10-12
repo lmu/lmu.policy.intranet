@@ -301,14 +301,14 @@ demo_files_images = {
         'type': 'Image',
         'author': '72C918A84D785B9F',  # 'Katrin.Groeschel',
     },
-    'uni-lund.jpg': {
-        'title': u'Universität Lund',
-        'description': u'Universität Lund',
-        'src': 'demo-content/blog/organisationsentwicklung-an-der-universitaet-lund/lunds-universitets-huvudbyggnad.jpg',
-        'target': '/blog-mit/organisationsentwicklung-an-der-universitaet-lund',
-        'type': 'Image',
-        'author': 'D3A7AFBDCBCDFAEF',  # 'Brady',
-    },
+    # 'uni-lund.jpg': {
+    #     'title': u'Universität Lund',
+    #     'description': u'Universität Lund',
+    #     'src': 'demo-content/blog/organisationsentwicklung-an-der-universitaet-lund/lunds-universitets-huvudbyggnad.jpg',
+    #     'target': '/blog-mit/organisationsentwicklung-an-der-universitaet-lund',
+    #     'type': 'Image',
+    #     'author': 'D3A7AFBDCBCDFAEF',  # 'Brady',
+    # },
     'berg.jpg': {
         'title': u'Wo einem die LMU überall begegnet',
         'description': u'Wo einem die LMU überall begegnet',

@@ -16,6 +16,7 @@ from plone.registry.interfaces import IRegistry
 from zope.component import getUtility
 
 from zExceptions import BadRequest
+from Products.CMFCore.WorkflowCore import WorkflowException
 from Products.AutoRoleFromHostHeader.plugins.AutoRole import AutoRole
 
 from lmu.policy.base.controlpanel import ILMUSettings
@@ -40,6 +41,7 @@ def setupVarious(context):
 
     _setupGroups(context)
     #_setupAutoRoleHeader(context)
+    _setupDeletePloneBaseContent(context)
     _setupBaseContent(context)
     _setupBreadcrumbs(context)
 
@@ -86,6 +88,15 @@ def _setupAutoRoleHeader(context):
     acl_users['auto_role_header_pinnwand'] = arh_pinnwand
 
 
+def _setupDeletePloneBaseContent(context):
+    portal = api.portal.get()
+    for item in portal.values():
+        if item in ['front-page', 'news', 'events', 'Members']:
+            api.content.delete(obj=item)
+    wf_tool = api.portal.get_tool('portal_workflow')
+    wf_tool.updateRoleMappings()
+
+
 def _setupBaseContent(context):
     for oid, oval in base_content.iteritems():
         try:
@@ -104,21 +115,27 @@ def _setupBaseContent(context):
                 folder.title = oval['title']
                 folder.description = oval['description']
                 folder.text = RichTextValue(oval['text'], 'text/html', 'text/html')
-            api.content.transition(obj=folder, to_state='internally_published')
-            for group, roles in oval['roles']:
+            try:
+                if api.content.get_state(obj=folder) != 'internally_published':
+                    api.content.transition(obj=folder, to_state='internally_published')
+            except WorkflowException as e:
+                pass
+                #print(e.message)
+            for group, roles in oval['roles'].iteritems():
                 api.group.grant_roles(groupname=group, roles=roles, obj=folder)
         except BadRequest as e:
             print(e.message)
         except Exception as e:
             print(e.message)
+            #import ipdb; ipdb.set_trace()
 
 
 def _setupBreadcrumbs(context):
     registry = getUtility(IRegistry)
     lmu_settings = registry.forInterface(ILMUSettings)
-    portal = context.getSite()
-    root = portal.unrestrictedTraverse(getNavigationRoot(portal)).absolute_url()
-    url = safe_unicode(root) + u'/index.html'
+    #portal = context.getSite()
+    #root = portal.unrestrictedTraverse(getNavigationRoot(portal)).absolute_url()
+    url = u'/index.html'
     lmu_settings.breadcrumb_1_url = url
     title_de = TitleLanguagePair(language='de', text=u'LMU ZUV-Intranet')
     lmu_settings.breadcrumb_1_title = [title_de]
@@ -166,15 +183,16 @@ def _setupDemoBlogEntries(context):
                 continue
             entry = container
             with api.env.adopt_user(username=oval['author']):
-                entry = api.content.create(
-                    id=oid,
-                    type='Blog Entry',
-                    container=container,
-                    title=oval['title'],
-                    description=oval['description'],
-                    text=RichTextValue(oval['text'], 'text/html', 'text/html'),
-                    creators=(oval['author'],),
-                )
+                with api.env.adopt_roles(roles=['Manager']):
+                    entry = api.content.create(
+                        id=oid,
+                        type='Blog Entry',
+                        container=container,
+                        title=oval['title'],
+                        description=oval['description'],
+                        text=RichTextValue(oval['text'], 'text/html', 'text/html'),
+                        creators=(oval['author'],),
+                    )
             if api.content.get_state(obj=entry) != 'internally_published':
                 api.content.transition(obj=entry, to_state='internally_published')
             entry.effective = DateTime(oval['date'])
@@ -216,16 +234,17 @@ def _setupDemoPinnwandEntries(context):
                 continue
             entry = container
             with api.env.adopt_user(username=oval['author']):
-                entry = api.content.create(
-                    id=oid,
-                    type='Pinnwand Entry',
-                    container=container,
-                    title=oval['title'],
-                    #description=oval.get('description', ''),
-                    text=RichTextValue(oval['text'], 'text/html', 'text/html'),
-                    pinnwand_entry_type=oval['category'],
-                    creators=(oval['author'],),
-                )
+                with api.env.adopt_roles(roles=['Manager']):
+                    entry = api.content.create(
+                        id=oid,
+                        type='Pinnwand Entry',
+                        container=container,
+                        title=oval['title'],
+                        #description=oval.get('description', ''),
+                        text=RichTextValue(oval['text'], 'text/html', 'text/html'),
+                        pinnwand_entry_type=oval['category'],
+                        creators=(oval['author'],),
+                    )
             if api.content.get_state(obj=entry) != 'internally_published':
                 api.content.transition(obj=entry, to_state='internally_published')
             entry.effective = DateTime(oval['date'])
@@ -255,28 +274,30 @@ def _setupDemoFilesAndImages(context):
                 item_file = context.openDataFile(os.path.dirname(__file__) + '/' + oval['src'])
                 entry = container
                 with api.env.adopt_user(username=oval['author']):
-                    entry = api.content.create(
-                        id=oid,
-                        type=oval['type'],
-                        container=container,
-                        title=oval.get('title', ''),
-                        description=oval.get('description', ''),
-                        file=NamedBlobFile(data=item_file.read()),
-                        creators=(oval['author'],),
-                    )
+                    with api.env.adopt_roles(roles=['Manager']):
+                        entry = api.content.create(
+                            id=oid,
+                            type=oval['type'],
+                            container=container,
+                            title=oval.get('title', ''),
+                            description=oval.get('description', ''),
+                            file=NamedBlobFile(data=item_file.read()),
+                            creators=(oval['author'],),
+                        )
             elif oval['type'] == 'Image':
                 item_file = context.openDataFile(os.path.dirname(__file__) + '/' + oval['src'])
                 entry = container
                 with api.env.adopt_user(username=oval['author']):
-                    entry = api.content.create(
-                        id=oid,
-                        type=oval['type'],
-                        container=container,
-                        title=oval.get('title', ''),
-                        description=oval.get('description', ''),
-                        image=NamedBlobImage(data=item_file.read()),
-                        creators=(oval['author'],),
-                    )
+                    with api.env.adopt_roles(roles=['Manager']):
+                        entry = api.content.create(
+                            id=oid,
+                            type=oval['type'],
+                            container=container,
+                            title=oval.get('title', ''),
+                            description=oval.get('description', ''),
+                            image=NamedBlobImage(data=item_file.read()),
+                            creators=(oval['author'],),
+                        )
             #if api.content.get_state(obj=entry) != 'internally_published':
             #    api.content.transition(obj=entry, to_state='internally_published')
             entry.effective = entry.modification_date
